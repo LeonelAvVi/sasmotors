@@ -1,5 +1,7 @@
 (function ($) {
-	
+	var multipleCardCarousel = document.querySelector(
+		"#carouselExampleControls"
+	  );
 	"use strict";
 
 	$(window).scroll(function() {

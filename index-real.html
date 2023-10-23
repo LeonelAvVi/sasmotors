@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/icons.css">
 <!--
 
 TemplateMo 576 SnapX Photography
@@ -160,12 +161,20 @@ https://templatemo.com/tm-576-snapx-photography
   </div>
 
   <div class="page-heading">
-    <div class="container">
+    <div class="container content-front">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 header-text">
-          <h2>Discover what's currently going on at <em>SnapX</em></h2>
-          <p>When you need Free CSS Templates, you just remember our website TemplateMo. We provide you best quality website templates at absolutely free of charge. No hidden cost involved.</p>
+
+          <h2>Descubre el poder  </h2>
+          <h2 class="left">de la  <em>ELEGANCIA</em></h2>
+          <img src="assets/img/logo.webp" alt="">
         </div>
+
+        <div class="cars">
+          <img src="assets/img/car-banner-1.webp" alt="car 1">
+          <img src="assets/img/car-banner-2.webp" alt="car 2">
+        </div>
+
       </div>
     </div>
   </div>
@@ -176,15 +185,20 @@ https://templatemo.com/tm-576-snapx-photography
         <div class="col-lg-12">
           <form id="search-form" name="gs" method="submit" role="search" action="#">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-3">
                 <fieldset>
-                    <label for="contest" class="form-label">Search Any Contest</label>
-                    <input type="text" name="contest" class="searchText" placeholder="Contest Name..." autocomplete="on" required>
+                    <label for="category" class="form-label"><span>01</span> Seleccionar marca</label>
+                    <select name="category" class="form-select" aria-label="Choose a category" id="category" onchange="this.form.click()">
+                        <option selected>Choose a category</option>
+                        <option type="checkbox" name="Nature" value="Nature">Nature Photography (220 Contests)</option>
+                        <option value="Portrait">Portrait Photography (172 Contests)</option>
+                        <option value="Space">Space Photography (92 Contests)</option>
+                    </select>
                 </fieldset>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-3">
                 <fieldset>
-                    <label for="category" class="form-label">Pick Category</label>
+                    <label for="category" class="form-label"><span>02</span> Seleccionar Modelo</label>
                     <select name="category" class="form-select" aria-label="Choose a category" id="category" onchange="this.form.click()">
                         <option selected>Choose a category</option>
                         <option type="checkbox" name="Nature" value="Nature">Nature Photography (220 Contests)</option>
@@ -195,7 +209,19 @@ https://templatemo.com/tm-576-snapx-photography
               </div>
               <div class="col-lg-2">
                 <fieldset>
-                    <label for="chooseprice" class="form-label">Award Price</label>
+                    <label for="chooseprice" class="form-label"><span>03</span> Seleccionar tipo</label>
+                    <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
+                        <option selected>Choose a price</option>
+                        <option value="500">$500 to $1,000</option>
+                        <option value="1500">$1,500 to $2,000</option>
+                        <option value="2500">$2,500 to $3000</option>
+                        <option value="3500+">$3,500+</option>
+                    </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-2">
+                <fieldset>
+                    <label for="chooseprice" class="form-label"><span>04</span> Seleccionar color</label>
                     <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
                         <option selected>Choose a price</option>
                         <option value="500">$500 to $1,000</option>
@@ -217,15 +243,477 @@ https://templatemo.com/tm-576-snapx-photography
     </div>
   </div>
 
-
-  <footer>
+  <section class="contact-us">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2048 <a href="#">SnapX</a> Photo Contest Co., Ltd. All rights reserved. 
-          
-          Design: <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+          <div class="section-heading text-center">
+            <h6>TU PROXIMO VEHICULO, <em>NUESTRA DEDICACION</em></h6>
+            <h4>Bienvenidos a <em>SAS Motors</em></h4>
+          </div>
         </div>
+        <div class="col-lg-4">
+          <div class="info-item">
+            <img src="assets/icons/calidad.svg" alt="">
+            <h4>Calidad Superior</h4>
+            <p>Ofrecemos vehículos de la más alta calidad para brindarte una experiencia de conducción excepcional.</p>
+          </div>  
+        </div>
+        <div class="col-lg-4">
+          <div class="info-item border-horizontal">
+            <img src="assets/icons/atencion.svg" alt="">
+            <h4>Atención Personalizada</h4>
+            <p>Nuestro equipo está dedicado a proporcionarte un servicio personalizado,ayudándote a encontrar el automóvil perfecto para tus necesidades.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="info-item">
+            <img src="assets/icons/pasion.svg" alt="">
+            <h4>Pasión Automotriz</h4>
+            <p>
+              En el corazón de SAS Motors late una profunda pasión por los autos, lo que nos impulsa a ofrecer lo mejor en la industria.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12 index-image">
+          <img src="assets/img/index-banner.webp" class="img-banner" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pt-5 pb-5 slide-cars section-padding">
+    
+    <div id="carouselExampleControls" class="carousel">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="section-carusel text-left p-4">
+            <h6>TU PROXIMO VEHICULO, NUESTRA DEDICACION</h6>
+            <h4>Bienvenidos a <em>SAS Motors</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-6 slider-buttons ">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-inner py-6">
+          <div class="carousel-item active">
+              <div class="card">
+                  <div class="img-wrapper"
+                    style="background-image: url(assets/img/caruosel/car1.webp);
+                    background-size: cover;
+                    background-position: center;
+                    "
+                  >
+                    <!-- <img src="/assets/img/caruosel/car1.webp" class="d-block w-100" alt="car1">  -->
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Auto 1</h5>
+                      <div class="card-info">
+                        <div class="card-info-element">
+                          <i class="fas fa-tachometer-alt"></i>
+                          2000
+                        </div>
+                        <div class="card-info-element border-horizontal">
+                          <i class="fas fa-gas-pump"></i>
+                          400
+                        </div>
+                        <div class="card-info-element">
+                          <i class="fas fa-dollar-sign"></i> 
+                          1000   </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="card">
+                <div class="img-wrapper"
+                  style="background-image: url(assets/img/caruosel/car2.webp);
+                  background-size: cover;
+                  background-position: center;
+                  "
+                >
+                  <!-- <img src="/assets/img/caruosel/car1.webp" class="d-block w-100" alt="car1">  -->
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Auto 2</h5>
+                    <div class="card-info">
+                      <div class="card-info-element">
+                        <i class="fas fa-tachometer-alt"></i>
+                        3000
+                      </div>
+                      <div class="card-info-element border-horizontal">
+                        <i class="fas fa-gas-pump"></i>
+                        520
+                      </div>
+                      <div class="card-info-element">
+                        <i class="fas fa-dollar-sign"></i> 
+                        1800   </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"
+              style="background-image: url(assets/img/caruosel/car3.webp);
+              background-size: cover;
+              background-position: center;"
+            >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto 3</h5>
+              <div class="card-info">
+                <div class="card-info-element">
+                  <i class="fas fa-tachometer-alt"></i>
+                  3500
+                </div>
+                <div class="card-info-element border-horizontal">
+                  <i class="fas fa-gas-pump"></i>
+                  480
+                </div>
+                <div class="card-info-element">
+                  <i class="fas fa-dollar-sign"></i> 
+                  1900
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"
+              style="background-image: url(assets/img/caruosel/car4.webp);
+              background-size: cover;
+              background-position: center;"
+            >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto 4</h5>
+              <div class="card-info">
+                <div class="card-info-element">
+                  <i class="fas fa-tachometer-alt"></i>
+                  3600
+                </div>
+                <div class="card-info-element border-horizontal">
+                  <i class="fas fa-gas-pump"></i>
+                  470
+                </div>
+                <div class="card-info-element">
+                  <i class="fas fa-dollar-sign"></i> 
+                  1950
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"
+              style="background-image: url(assets/img/caruosel/car5.webp);
+              background-size: cover;
+              background-position: center;"
+            >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto 5</h5>
+              <div class="card-info">
+                <div class="card-info-element">
+                  <i class="fas fa-tachometer-alt"></i>
+                  3700
+                </div>
+                <div class="card-info-element border-horizontal">
+                  <i class="fas fa-gas-pump"></i>
+                  460
+                </div>
+                <div class="card-info-element">
+                  <i class="fas fa-dollar-sign"></i> 
+                  2000
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"
+              style="background-image: url(assets/img/caruosel/car6.webp);
+              background-size: cover;
+              background-position: center;"
+            >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto 6</h5>
+              <div class="card-info">
+                <div class="card-info-element">
+                  <i class="fas fa-tachometer-alt"></i>
+                  3800
+                </div>
+                <div class="card-info-element border-horizontal">
+                  <i class="fas fa-gas-pump"></i>
+                  450
+                </div>
+                <div class="card-info-element">
+                  <i class="fas fa-dollar-sign"></i> 
+                  2050
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"
+              style="background-image: url(assets/img/caruosel/car7.webp);
+              background-size: cover;
+              background-position: center;"
+            >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto 7</h5>
+              <div class="card-info">
+                <div class="card-info-element">
+                  <i class="fas fa-tachometer-alt"></i>
+                  3900
+                </div>
+                <div class="card-info-element border-horizontal">
+                  <i class="fas fa-gas-pump"></i>
+                  440
+                </div>
+                <div class="card-info-element">
+                  <i class="fas fa-dollar-sign"></i> 
+                  2100
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"
+              style="background-image: url(assets/img/caruosel/car8.webp);
+              background-size: cover;
+              background-position: center;"
+            >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto 8</h5>
+              <div class="card-info">
+                <div class="card-info-element">
+                  <i class="fas fa-tachometer-alt"></i>
+                  4000
+                </div>
+                <div class="card-info-element border-horizontal">
+                  <i class="fas fa-gas-pump"></i>
+                  430
+                </div>
+                <div class="card-info-element">
+                  <i class="fas fa-dollar-sign"></i> 
+                  2150
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"
+              style="background-image: url(assets/img/caruosel/car9.webp);
+              background-size: cover;
+              background-position: center;"
+            >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Auto 9</h5>
+              <div class="card-info">
+                <div class="card-info-element">
+                  <i class="fas fa-tachometer-alt"></i>
+                  4100
+                </div>
+                <div class="card-info-element border-horizontal">
+                  <i class="fas fa-gas-pump"></i>
+                  420
+                </div>
+                <div class="card-info-element">
+                  <i class="fas fa-dollar-sign"></i> 
+                  2200
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="p-5 slide-information section-padding">
+  <div class="section-heading text-center">
+    <h6>TU PROXIMO VEHICULO, <em>NUESTRA DEDICACION</em></h6>
+    <h4>Bienvenidos a <em>SAS Motors</em></h4>
+    <div class="col-lg-12 d-flex py-5">
+      <div class="col-lg-4  px-4">
+        <p class="information-number">
+          0<span>1</span>
+        </p>
+        <p class="information-title">
+          Busca en nuestro inventario
+        </p>
+        <p class="information-text">
+          Explora nuestra amplia selección de vehículos en busca del automóvil de tus sueños. Tenemos una gama diversa para elegir.
+        </p>
+      </div>
+      <div class="col-lg-4 px-4">
+        <p class="information-number">
+          0<span>2</span>
+        </p>
+        <p class="information-title">
+          Contáctanos
+        </p>
+        <p class="information-text">
+          Contáctanos para programar una prueba de manejo o para obtener más información sobre nuestros vehículos.
+        </p>
+      </div>
+      <div class="col-lg-4 px-4">
+        <p class="information-number">
+          0<span>3</span>
+        </p>
+        <p class="information-title">
+          Visítanos
+        </p>
+        <p class="information-text">
+          Visítanos en nuestra ubicación para ver nuestros vehículos en persona y conocer a nuestro equipo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="closed-contests">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-12">
+        <div class="owl-features owl-carousel" style="position: relative; z-index: 5;">
+          <div class="item">
+            <div class="closed-item">
+              <img src="assets/images/closed-01.jpg" alt="">
+              <div class="down-content">
+                <h4>
+                  John Doe
+                </h4>
+                <p>
+                  "Mi experiencia en SAS Motors fue excepcional. 
+                  Encontré el automóvil perfecto para 
+                  mi familia y yo. El servicio personalizado de Juan 
+                  y su equipo nos hizo sentir como en casa. 
+                  ¡Recomiendo encarecidamente SAS Motors para 
+                  tu próxima compra de automóvil!"
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container footer">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="logo" src="assets/img/logo.webp" alt="Sas Motors">
+          <div>
+            <!-- iconos de facebook correo instagram y whatsapp -->
+            <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            
+            <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.whatsapp.com/" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+
+            <a href="https://mail.google.com/" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4 footer-section">
+          <h4>Información de contacto</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span>123 Avenida, San José, Costa Rica</span>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <span>+506 8888 8888</span>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <span><a href="mailto:" class="mail">
+                sas@gmail.com</a></span>
+            </li>
+          </ul>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.7964396162924!2d-65.24439890795529!3d-19.037653299999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8d49f3128b1%3A0x793e79d35a5fe3ec!2sEdificio%20Careaga!5e0!3m2!1ses-419!2sbo!4v1697124174127!5m2!1ses-419!2sbo" width="350" height="200" style="border:0;margin-top: 32px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-4 footer-section">
+          <h4>Enlaces rápidos </h4>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="#">Nosotros</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="#">Modelos</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right"></i>
+              <a href="#">Mantenimiento</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 footer-section">
+          <h4 class="mb-2">Mándanos un mensaje</h4>
+          <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>
+          <button type="submit" id="form-submit" class="main-button">Enviar</button>
+        </div>
+      </div>
+      <div class="container-fluid">
+
+        <div class="row copy">
+          <div class="col-lg-12">
+            <p>Copyright © 2023 SAS Motors, Diseñado y Desarrollado 
+              por <a rel="nofollow"  target="_parent">40 de Fiebre</a>
+              
+            </p>
+          </div>
+      </div>
       </div>
     </div>
   </footer>
