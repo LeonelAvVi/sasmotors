@@ -711,7 +711,39 @@ Header Style
     height: 0px;
   }
 }
+/*
+*********
+ item search
+ ***********
+ */
 
+ .item-search{
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 4px;
+ }
+ .item-content{
+  padding: 16px;
+ }
+
+ .item-search h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+ }
+
+ .item-search p{
+  font-size: 16px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+ }
 
 /*
 --------------------------------------------
@@ -735,11 +767,12 @@ section.popupBody {
 }
 
 .popupContainer {
-  position: absolute;
-  width: 330px;
+  position: relative;
+  width: 90%;
   height: auto;
-  left: 45%;
-  top: 60px;
+  padding: auto;
+  /* left: 45%; */
+  /* top: 60px; */
   background: #FFF;
 }
 
@@ -789,13 +822,21 @@ a.btn_red {
   font-size: 16px;
   text-transform: uppercase;
 }
+.popupHeader .header_title{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #BF0007;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 32px;
+}
 
 .popupHeader {
-  background: #F4F4F2;
+  background: transparent;
   position: relative;
-  padding: 10px 20px;
-  border-bottom: 1px solid #DDD;
-  font-weight: bold;
+
 }
 
 .popupHeader .modal_close {
@@ -813,12 +854,16 @@ a.btn_red {
   padding: 20px;
 }
 
+.social_login{
+  width: 90%;
+}
+
 .social_login .social_box {
   display: block;
   clear: both;
   padding: 10px;
   margin-bottom: 10px;
-  background: #F4F4F2;
+  background: #a2a21f;
   overflow: hidden;
 }
 
@@ -1685,7 +1730,7 @@ page heading
   background-size: cover;
   padding-top: 208px;
   padding-bottom: 280px;
-  min-height: 502px;
+  min-height: 402px;
   text-align: center;
   background-color: #2a2a2a;
   position: relative;
@@ -1694,6 +1739,7 @@ page heading
   z-index: 0;
   display: flex;
   flex-direction: column;
+  margin-left: 24px;
 }
 
 .page-heading .cars{
@@ -1702,17 +1748,27 @@ page heading
   object-fit: cover;
   z-index: 0;
   position: absolute;
+  top: 15%;
+  left: 25%;
+  right: 0;
+  bottom: 0;
+}
+.page-heading .cars img{
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-
 .page-heading::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 1%;
   bottom: 0;
   width: 50%; /* El 50% del ancho de la pantalla */
   background-color: rgba(0, 0, 0, 0.628);
@@ -1723,7 +1779,11 @@ page heading
 .page-heading .content-front{
   position: relative;
   z-index: 1;
-  padding-left: 8%;
+  padding-left: 0%;
+}
+
+.page-heading .content-front .header-text em{
+  font-weight: bold;
 }
 
 .page-heading img{
@@ -1820,23 +1880,33 @@ Contests Page
     border-radius: 1px;
     padding: 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 10;
     position: relative;
     border-bottom: 3px solid #FFBB00;
 }
 
 #search-form label {
-  font-size: 15px;
+  font-size: 12px;
   color: #2a2a2a;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+#search-form label span{
+  font-size: 12px;
+  color: #BF0007;
+  font-weight: 600;
+  text-transform: uppercase;
+
 }
 
 #search-form input,
 #search-form select {
-  background-color: #f7f7f7;
+  background-color: #e7e3e3;
   width: 100%;
   height: 46px;
-  border-radius: 10px;
+  border-radius: 1px;
   bordeR: none;
   outline: none;
   padding: 0px 15px;
@@ -1852,11 +1922,11 @@ Contests Page
   margin-top: 30px;
   font-size: 15px;
   color: rgb(255, 255, 255);
-  background-color: rgb(0, 189, 254);
-  border: 1px solid rgb(0, 189, 254);
-  padding: 10px 30px;
+  background-color: #BF0007;
+  border: 1px solid #BF0007;
+  padding: 10px 40px;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 1px;
   font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 0.5px;

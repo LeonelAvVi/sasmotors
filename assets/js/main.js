@@ -74,4 +74,3 @@ colorThumbnails.forEach(thumbnail => {
   });
 });
 
-alert("hola");

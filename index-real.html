@@ -17,6 +17,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/templatemo-snapx-photography.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -60,7 +61,7 @@ https://templatemo.com/tm-576-snapx-photography
                           <li><a href="users.html">Mantenimiento</a></li>
                       </ul>   
                       <div class="border-button">
-                        <a id="modal_trigger" href="#modal" class="sign-in-up"><i class="fa fa-user"></i> Contáctenos</a>
+                        <a class="sign-in-up"><i class="fa fa-user"></i> Contáctenos</a>
                       </div>
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -75,104 +76,35 @@ https://templatemo.com/tm-576-snapx-photography
 
   <div id="modal" class="popupContainer" style="display:none;">
     <div class="popupHeader">
-        <span class="header_title">Login</span>
         <span class="modal_close"><i class="fa fa-times"></i></span>
     </div>
 
     <section class="popupBody">
         <!-- Social Login -->
         <div class="social_login">
-            <div class="">
-                <a href="#" class="social_box fb">
-                    <span class="icon"><i class="fab fa-facebook"></i></span>
-                    <span class="icon_title">Connect with Facebook</span>
-
-                </a>
-
-                <a href="#" class="social_box google">
-                    <span class="icon"><i class="fab fa-google-plus"></i></span>
-                    <span class="icon_title">Connect with Google</span>
-                </a>
+            <div class="container">
+              <div class="row align-items-center justify-content-center" id="items-search">
+                
+              </div>
             </div>
-
-            <div class="centeredText">
-                <span>Or use your Email address</span>
-            </div>
-
-            <div class="action_btns">
-                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
-                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
-            </div>
-        </div>
-
-        <!-- Username & Password Login form -->
-        <div class="user_login">
-            <form action="" method="post">
-                <label>Email / Username</label>
-                <input name="username" type="text" id="username" />
-              <br />
-
-                <label>Password</label>
-                <input name="password" type="password" id="password" />
-              <br />
-
-                <div class="checkbox">
-                    <input id="remember" type="checkbox" />
-                    <label for="remember">Remember me on this computer</label>
-                </div>
-
-                <div class="action_btns">
-                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                    <div class="one_half last"><button type="submit" class="btn btn_red">Login</button></div>
-                </div>
-            </form>
-
-            <a href="#" class="forgot_password">Forgot password?</a>
-        </div>
-
-        <!-- Register Form -->
-        <div class="user_register">
-            <form action="" method="post">
-                <label>Username</label>
-                <input name="username" type="text" id="username" />
-                <br />
-
-                <label>Email Address</label>
-                <input name="email" type="email" id="email" />
-                <br />
-
-                <label>Password</label>
-                <input name="password" type="password" id="password" />
-                <br />
-
-                <div class="checkbox">
-                    <input id="send_updates" type="checkbox" />
-                    <label for="send_updates">Send me occasional email updates</label>
-                </div>
-
-                <div class="action_btns">
-                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                    <div class="one_half last"><button type="submit" class="btn btn_red">Register</button></div>
-                </div>
-            </form>
-        </div>
-        
+        </div>        
     </section>
   </div>
 
   <div class="page-heading">
     <div class="container content-front">
       <div class="row">
-        <div class="col-lg-8 offset-lg-2 header-text">
+        <div class="col-lg-8 header-text" data-aos="fade-right">
 
           <h2>Descubre el poder  </h2>
           <h2 class="left">de la  <em>ELEGANCIA</em></h2>
-          <img src="assets/img/logo.webp" alt="">
+          <img src="assets/img/logo.webp" alt="logo">
+          
         </div>
 
         <div class="cars">
-          <img src="assets/img/car-banner-1.webp" alt="car 1">
-          <img src="assets/img/car-banner-2.webp" alt="car 2">
+          <!-- <img src="assets/img/car-banner-1.webp" alt="car 1"> -->
+          <img src="assets/img/car-banner-2.webp" alt="car 2" data-aos="">
         </div>
 
       </div>
@@ -188,52 +120,51 @@ https://templatemo.com/tm-576-snapx-photography
               <div class="col-lg-3">
                 <fieldset>
                     <label for="category" class="form-label"><span>01</span> Seleccionar marca</label>
-                    <select name="category" class="form-select" aria-label="Choose a category" id="category" onchange="this.form.click()">
-                        <option selected>Choose a category</option>
-                        <option type="checkbox" name="Nature" value="Nature">Nature Photography (220 Contests)</option>
-                        <option value="Portrait">Portrait Photography (172 Contests)</option>
-                        <option value="Space">Space Photography (92 Contests)</option>
+                    <select name="category" class="form-select" aria-label="Seleccionar Marca" id="category" onchange="this.form.click()">
+                        <option selected>Seleccionar Marca</option>
+                        <option name="mitsubishi" value="mitsubishi">Mitsubishi</option>
                     </select>
                 </fieldset>
               </div>
               <div class="col-lg-3">
                 <fieldset>
                     <label for="category" class="form-label"><span>02</span> Seleccionar Modelo</label>
-                    <select name="category" class="form-select" aria-label="Choose a category" id="category" onchange="this.form.click()">
-                        <option selected>Choose a category</option>
-                        <option type="checkbox" name="Nature" value="Nature">Nature Photography (220 Contests)</option>
-                        <option value="Portrait">Portrait Photography (172 Contests)</option>
-                        <option value="Space">Space Photography (92 Contests)</option>
+                    <select name="model" class="form-select" aria-label="Seleccionar Modelo" id="model" onchange="this.form.click()">
+                        <option selected>Seleccionar Modelo</option>
+                        <option type="checkbox" name="Mirage" value="Mirage G4">Mirage G4</option>
+                        <option type="checkbox" name="xpander" value="Xpander">XPander</option>
+                        <option type="checkbox" name="xpander-cross" value="Xpander Cross">XPander Cross</option>
+                        <option type="checkbox" name="asx" value="asx">ASX</option>
+                        <option type="checkbox" name="eclipse" value="Eclipse Cross">Eclipse Cross</option>
+                        <option type="checkbox" name="outlander" value="outlander">Outlander</option>
+                        <option type="checkbox" name="montero" value="Montero Sport">Montero Sport</option>
+                        <option type="checkbox" name="l200" value="L200">L200</option>
+                        
                     </select>
                 </fieldset>
               </div>
               <div class="col-lg-2">
                 <fieldset>
-                    <label for="chooseprice" class="form-label"><span>03</span> Seleccionar tipo</label>
-                    <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                        <option selected>Choose a price</option>
-                        <option value="500">$500 to $1,000</option>
-                        <option value="1500">$1,500 to $2,000</option>
-                        <option value="2500">$2,500 to $3000</option>
-                        <option value="3500+">$3,500+</option>
+                    <label for="chooseprice" class="form-label"><span>03</span> Seleccionar Precio</label>
+                    <select name="Price" class="form-select" aria-label="Default select example" id="price" onchange="this.form.click()">
+                        <option selected>Seleccionar Precio</option>
+                        <option value="15000">$15 000 a $20 000</option>
+                        <option value="20000">$21 000 a $30 00</option>
+                        <option value="30000">$31 000 a $40 000</option>
+                        <option value="40000">$41 000 a $50 000</option>
+                        <option value="50000">$50 000+</option>
                     </select>
                 </fieldset>
               </div>
               <div class="col-lg-2">
                 <fieldset>
                     <label for="chooseprice" class="form-label"><span>04</span> Seleccionar color</label>
-                    <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                        <option selected>Choose a price</option>
-                        <option value="500">$500 to $1,000</option>
-                        <option value="1500">$1,500 to $2,000</option>
-                        <option value="2500">$2,500 to $3000</option>
-                        <option value="3500+">$3,500+</option>
-                    </select>
+                    <input type="text" id="favcolor" name="favcolor" placeholder="Color">
                 </fieldset>
               </div>
               <div class="col-lg-2">                        
                 <fieldset>
-                    <button class="main-button">Search Now</button>
+                    <button  id="modal_trigger" href="#modal" class="search-button">Buscar</button>
                 </fieldset>
               </div>
             </div>
@@ -717,6 +648,7 @@ https://templatemo.com/tm-576-snapx-photography
       </div>
     </div>
   </footer>
+  
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
@@ -729,6 +661,12 @@ https://templatemo.com/tm-576-snapx-photography
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/index.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
