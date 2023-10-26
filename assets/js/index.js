@@ -245,6 +245,7 @@ function mostrarInformacion() {
   }
 
 function showCars(cars){
+    const namePath= cars.name.toLowerCase().replace(/\s/g, "-");
     return `
     <div class="col-lg-3 item-content">
         <div class="item-search gap-1">
@@ -252,7 +253,7 @@ function showCars(cars){
         <h4>${cars.name}</h4>
         <p>$${cars.price[0]}</p>
         <button class="btn btn-primary"
-            onclick="window.location.href='https://www.mitsubishi-motors.com.pe/modelos/${cars.name.toLowerCase()}'"
+            onclick="window.location.href='/catalog/${namePath}'"
         >Ver más</button>
         </div>
     </div>
