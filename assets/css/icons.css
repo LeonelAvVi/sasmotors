@@ -268,9 +268,15 @@ section.about-section-description .content-description p{
     line-height: 24px;
 }
 
+section.about-section-description .content-description .description{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 section.about-section-description .content-description h2 span,
 section.about-section-description .content-description p span {
     color: #BF0007;
+    font-weight: bold;
 }
 
 
