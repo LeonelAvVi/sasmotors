@@ -344,6 +344,7 @@ Header Style
 
 .nav-active{
   /* border-bottom: 3px solid #FFBB00; */
+  padding: 0px 12px !important;
   background-color: #FFBB00 !important;
   color: black !important;
 }

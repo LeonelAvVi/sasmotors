@@ -47,21 +47,21 @@ https://templatemo.com/tm-576-snapx-photography
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class="nav-active"><a href="index.html">Inicio</a></li>
+                          <li class=""><a href="index-real.html">Inicio</a></li>
                           
                           <li class="">  <!-- <li class="has-sub"> -->
-                            <a href="#" >Nosotros</a>
+                            <a href="about.html" >Nosotros</a>
                               <!-- <a href="javascript:void(0)" >Photos &amp; Videos</a> -->
                               <!-- <ul class="sub-menu">
                                   <li><a href="contests.html">Contests</a></li>
                                   <li><a href="contest-details.html">Single Contest</a></li>
                               </ul> -->
                           </li>
-                          <li><a href="categories.html">Modelos</a></li>
-                          <li><a href="users.html">Mantenimiento</a></li>
+                          <li><a class="nav-active" href="catalog.html">Modelos</a></li>
+                          <li><a href="maintenance.html">Mantenimiento</a></li>
                       </ul>   
                       <div class="border-button">
-                        <a class="sign-in-up"><i class="fa fa-user"></i> Contáctenos</a>
+                        <a class="sign-in-up" href="contact.html"><i class="fa fa-user"></i> Contáctenos</a>
                       </div>
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -78,6 +78,7 @@ https://templatemo.com/tm-576-snapx-photography
     <div class="container content-front">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 content-header"
+        data-aos="zoom-out-up"
         >
 
           <h2>nuestra empresa</h2>
@@ -94,7 +95,7 @@ https://templatemo.com/tm-576-snapx-photography
   <section class="catalog">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-3" data-aos="zoom-out">
           <!-- section search -->
           <div class="catalog-search-title">
             <h4>Buscar</h4>
@@ -131,7 +132,7 @@ https://templatemo.com/tm-576-snapx-photography
             </div>
           </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9" data-aos="zoom-out">
           <div class="row">
             <div class="col-lg-12 px-5 input-search">
               <input type="text" name="search" id="search" placeholder="Buscar">
@@ -140,7 +141,7 @@ https://templatemo.com/tm-576-snapx-photography
               </button>
             </div>
           </div>
-          <div class="row px-5">
+          <div class="row px-5" id="catalog-content">
             <div class="col-lg-4">
               <div class="model-car">
                 <div class="see">
@@ -404,17 +405,12 @@ https://templatemo.com/tm-576-snapx-photography
       <div class="row">
         <div class="col-lg-12">
           <img class="logo" src="assets/img/logo.webp" alt="Sas Motors">
-          <div>
-            <!-- iconos de facebook correo instagram y whatsapp -->
-            <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-            
-            <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-
-            <a href="https://www.whatsapp.com/" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-
-            <a href="https://mail.google.com/" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
-            
-            
+<div>
+            <a href="https://www.facebook.com/profile.php?id=61550636940761" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sas_motors_?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=%2B59162890201" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:sasmotorssucre@gmail.com"
+             target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
 
@@ -425,16 +421,16 @@ https://templatemo.com/tm-576-snapx-photography
           <ul class="contact-info">
             <li>
               <i class="fa fa-map-marker"></i>
-              <span>123 Avenida, San José, Costa Rica</span>
+              <span>Inca Garcilazo esq. Jose Aguirre</span>
             </li>
             <li>
               <i class="fa fa-phone"></i>
-              <span>+506 8888 8888</span>
+              <span>62890201</span>
             </li>
             <li>
               <i class="fa fa-envelope"></i>
               <span><a href="mailto:" class="mail">
-                sas@gmail.com</a></span>
+                SasMotorsSucre@gmail.com</a></span>
             </li>
           </ul>
 
@@ -463,8 +459,8 @@ https://templatemo.com/tm-576-snapx-photography
         </div>
         <div class="col-lg-4 footer-section">
           <h4 class="mb-2">Mándanos un mensaje</h4>
-          <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>
-          <button type="submit" id="form-submit" class="main-button">Enviar</button>
+          <textarea name="message" rows="6" class="form-control" id="message-footer" placeholder="Mensaje" required=""></textarea>
+          <button id="form-submit-footer" class="main-button">Enviar</button>
         </div>
       </div>
       <div class="container-fluid">
@@ -496,6 +492,31 @@ https://templatemo.com/tm-576-snapx-photography
   <!-- animation library for notifications  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="assets/js/main.js" ></script>
+  <script src="assets/js/index.js" ></script>
+
+  
+  <script>
+    // alert('hola');
+    let buttonSend = document.getElementById('form-submit-footer');
+    let message = document.getElementById('message-footer');
+    //mandar mensaje por whatsapp
+    buttonSend.addEventListener('click', function(){
+      let messageText = message.value;
+      let url = 'https://api.whatsapp.com/send?phone=59162890201&text='+messageText;
+      window.open(url, '_blank');
+    });
+
+  </script>
+
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    loadCatalog();
+  </script>
 
 
   </body>
