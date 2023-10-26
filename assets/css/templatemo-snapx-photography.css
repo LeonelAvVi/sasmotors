@@ -65,7 +65,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
   font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 .clearfix:after {
@@ -224,7 +224,7 @@ body {
   font-size: 15px;
   text-transform: uppercase;
   color: #BF0007;
-  font-weight: 400;
+  font-weight: bold !important;
 }
 
 .section-heading h4 {
@@ -239,6 +239,7 @@ body {
 .section-heading h4 em {
   color: #BF0007;
   font-style: normal;
+  font-weight: bold !important;
 }
 
 .section-heading p {

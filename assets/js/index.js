@@ -88,7 +88,7 @@ var dataCars = [
         "name":"Montero Sport",
         "price":[55990,61990],
         "image":"assets/img/g4.jpg",
-        "color":[
+        "colors":[
             "Gris Graphito Metálico",
             "Plata Metálico Sterling",
             "Blanco Sólido",
@@ -103,7 +103,7 @@ var dataCars = [
         "name":"L200",
         "price":[34500,36490,39090,41490],
         "image":"assets/img/g4.jpg",
-        "color":[
+        "colors":[
             "Gris Grafito",
             "Plata Metálico",
             "Blanco Diamante",
@@ -143,8 +143,9 @@ function mostrarInformacion() {
     const selectedModel = modelSelect.value;
     const selectedPrice = priceSelect.value;
   
-    const favoriteColor = favColorInput.value;
-  
+    //quitar los espacios y poner todo en minuscula
+    const favoriteColor = favColorInput.value.trim().toLowerCase();
+    console.log(favoriteColor);
     const mensaje = `Categoría: ${selectedCategory}\nModelo: ${selectedModel}\nPrecio: ${selectedPrice}\nColor Favorito: ${favoriteColor}`;
 
     let content = document.getElementById("items-search");
@@ -191,11 +192,14 @@ function mostrarInformacion() {
             }
         });
 
-        element.colors.forEach(color => {
-            if(color.toLowerCase().replace(/\s/g, "").includes(favoriteColor.toLowerCase().replace(/\s/g, ""))){
+        element.colors.forEach(elementColor=>{
+            //eliminar espacios y poner a todo en minuscula
+            let color = elementColor.toLowerCase().replace(/\s/g, "");
+            if(color.includes(favoriteColor)){
+                console.log(elementColor);
                 content.innerHTML += showCars(element);
             }
-        });
+        })
 
 
     });
