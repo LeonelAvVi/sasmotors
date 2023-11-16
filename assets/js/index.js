@@ -1,13 +1,20 @@
 var dataCars = [
     {
         "name":"Mirage G4",
-        "price": [17490,18490],
+        "price": ['4x4/4x2',18490],
         "image": "../catalog/mirage-g4/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2024",
+        "force":"76",
+        "MN": "100 Torque",
+        "4x2": true,
+        "4x4": false,
+        "MT" : "5 Velocidades",
+        "AT" : "-",
         "marca":"Mitsubishi",
         "url":"../catalog/mirage-g4/index.html",
         "type":"Auto.",
+        "CC": "1.2 MIVEC",
+        "transmision": "4x2",
         "colors": [
             "gris Titanio",
             "Plateado Metalico",
@@ -23,11 +30,18 @@ var dataCars = [
         "name": "Xpander",
         "price":[23490, 26990],
         "image":"../catalog/xpander/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2024",
+        "force":"103",
         "marca":"Mitsubishi",
         "url":"../catalog/xpander/index.html",
         "type":"Auto.",
+        "CC" : "1.5 MIVEC",
+        "NM" : "141 Torque",
+        "4x2": false,
+        "4x4" : false,
+        "MT": "5 Velocidades",
+        "AT" : "4 Velociadades",
+        "transmision": "4x2 - 4x4",
         "colors":[
             "gris Grafito Metalico",
             "Plateado Metalico",
@@ -40,11 +54,18 @@ var dataCars = [
         "name":"Xpander Cross",
         "price":[30990],
         "image":"../catalog/xpander-cross/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2024",
+        "force":"103",
         "marca":"Mitsubishi",
         "url":"../catalog/xpander-cross/index.html",
         "type":"Auto.",
+        "CC" : "1.5 MIVEC",
+        "NM" : "141 Torque",
+        "4x2" : true,
+        "4x4":false,
+        "MT" : "-",
+        "AT" : "4 Velocidades",
+        "transmision": "4x2",
         "colors":[
             "gris Grafito Metalico",
             "plateado Metalico",
@@ -57,11 +78,18 @@ var dataCars = [
         "name":"asx",
         "price":[29300, 30300,32300,34300],
         "image":"../catalog/asx/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2024",
+        "force":"148",
         "marca":"Mitsubishi",
         "url":"../catalog/asx/index.html",
         "type":"Auto.",
+        "CC" : "2.0 MIVEC",
+        "NM" : "198 Torque",
+        "4x2" : true,
+        "4x4":true,
+        "MT" : "5 Velocidades",
+        "AT" : " CVT 6 Velocidades",
+        "transmision": "4x2 - 4x4",
         "colors":[
             "gris titanio",
             "plata metalico",
@@ -70,16 +98,24 @@ var dataCars = [
             "azul Deportivo",
             "Negro mica"
         ]
+
     },
     {
         "name":"Eclipse Cross",
         "price":[35990,37450,39300,],
         "image":"../catalog/eclipse-cross/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2024",
+        "force":"146",
         "marca":"Mitsubishi",
         "url":"../catalog/eclipse-cross/index.html",
         "type":"Auto.",
+        "CC" : "2.0 MIVEC",
+        "NM" : "198 Torque",
+        "4x2": true,
+        "4x4": true,
+        "MT" : "-",
+        "AT" : "CVT 6 Velocidades",
+        "transmision": "4x2 - 4x4",
         "colors":[
             "gris titanio",
             "plata metalico",
@@ -95,11 +131,18 @@ var dataCars = [
         "name":"outlander",
         "price":[39400,44000,46800,49800,52800],
         "image":"../catalog/outlander/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2024",
+        "force":"181",
         "marca":"Mitsubishi",
         "url":"../catalog/outlander/index.html",
         "type":"Auto.",
+        "CC": "2.5 MIVEC",
+        "NM": "245 Torque",
+        "4x2": true,
+        "4x4": true,
+        "MT" :"-",
+        "AT":"-",
+        "transmision": "4x2 - 4x4",
         "colors":[
             "Gris Titanio Metálico",
             "Plateado Metálico",
@@ -116,11 +159,18 @@ var dataCars = [
         "name":"Montero Sport",
         "price":[55990,61990],
         "image":"../catalog/montero-sport/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2023",
+        "force":"216",
         "marca":"Mitsubishi",
         "url":"../catalog/montero-sport/index.html",
         "type":"Auto.",
+        "CC": "3.0 MIVEC",
+        "NM":"285 Torque",
+        "4x2":true,
+        "4x4": true,
+        "MT" :"-",
+        "AT" : "8 Velocidades",
+        "transmision": "4x2 - 4x4",
         "colors":[
             "Gris Graphito Metálico",
             "Plata Metálico Sterling",
@@ -136,11 +186,18 @@ var dataCars = [
         "name":"L200",
         "price":[34500,36490,39090,41490],
         "image":"../catalog/l200/img/banner.webp",
-        "anio":"2022",
-        "force":"1000",
+        "anio":"2024",
+        "force":"130",
         "marca":"Mitsubishi",
         "url":"../catalog/l200/index.html",
         "type":"Auto.",
+        "CC": "2.4 MIVEC",
+        "NM" : "202 Torque",
+        "4x2" : true,
+        "4x4" : false,
+        "MT" : "5 Velocidades",
+        "AT" : "-",
+        "transmision": "4x2 - 4x4",
         "colors":[
             "Gris Grafito",
             "Plata Metálico",
@@ -150,6 +207,88 @@ var dataCars = [
             "Azul Metalico",
             "Bronce Metalico",
             "Negro Mica"
+        ]
+    },
+    {
+        "name":"VIGUS WORK",
+        "price": [0],
+        "image" : "../catalog/VigusWork.webp",
+        "anio":"2024",
+        "force":"174",
+        "marca":"JMC",
+        "url":"../catalog/viguswork/index.html",
+        "type":"Auto.",
+        "CC":"1.8",
+        "NM":"280 Torque",
+        "4x2" : true,
+        "4x4" : true,
+        "MT" : "6 Velocidades",
+        "AT" : "-",
+        "transmision": "4x2 - 4x4",
+        "colors":[
+            "Blanco",
+            "Plata"
+        ]
+    },
+    {
+        "name":"VIGUS Pro",
+        "price": [0],
+        "image" : "../catalog/VigusPro.webp",
+        "anio":"2024",
+        "force":"217",
+        "marca":"JMC",
+        "url":"../catalog/viguswork/index.html",
+        "type":"Auto.",
+        "CC":"2.0",
+        "NM":"345 Torque",
+        "4x2" : true,
+        "4x4" : true,
+        "MT" : "6 Velocidades",
+        "AT" : "8 Velocidades",
+        "transmision": "4x2 - 4x4",
+        "colors":[
+            "Blanco",
+            "Plata"
+        ]
+    },
+    {
+        "name": "Fuso Canter",
+        "price": [0],
+        "image": "../catalog/Canter.png",
+        "anio": "2024",
+        "force": "129",
+        "marca": "Mitsubishi Fuso",
+        "url": "../catalog/FusoCanter/index.html",
+        "type": "Truck",
+        "CC": "3.0",
+        "NM": "370 Nm",
+        "4x2": true,
+        "4x4": true,
+        "MT": "N/A",
+        "AT": "Duonic DCT",
+        "transmision": "4x2 - 4x4",
+        "colors": [
+            "N/A"
+        ]
+    },
+    {
+        "name": "Fuso FJ",
+        "price": [0],
+        "image": "../catalog/FJ.jpg",
+        "anio": "2024",
+        "force": "210",
+        "marca": "Mitsubishi Fuso",
+        "url": "../catalog/FusoFJ/index.html",
+        "type": "Truck",
+        "CC": "6.4",
+        "NM": "1120 Nm",
+        "4x2": true,
+        "4x4": true,
+        "MT": "9-speed transmission",
+        "AT": "N/A",
+        "transmision": "4x2 - 4x4",
+        "colors": [
+            "Arctic White"
         ]
     }
 
@@ -298,8 +437,10 @@ function cardCatalog(cars){
             <div class="dates">
             <!-- anio  -->
             <div class="inline ">
-                <i class="fas fa-calendar-alt"></i>
-                <p>${cars.anio}</p>
+                <p 
+                style="color: #FFBB00 !important; font-weight: bold; margin-right: 4px;"
+                >CC</p>
+                <p>${cars.CC}</p>
             </div>
             <div class="inline" 
                 style="color: #FFBB00 !important;"
@@ -336,18 +477,20 @@ function cardCarousel(cars){
             </div>
             <div class="card-body">
                 <h5 class="card-title">${cars.name}</h5>
+                
                 <div class="card-info">
                 <div class="card-info-element">
-                    <i class="fas fa-calendar-alt"></i>
-                    ${cars.anio}
+                <span 
+                style="color: #000 !important; font-weight: bold; margin-right: 4px;"
+                >CC</span>
+                <span>${cars.CC.replace(/MIVEC/, '')}</span>
                 </div>
                 <div class="card-info-element border-horizontal">
                     <i class="fas fa-horse-head"></i>
                     ${cars.force}
                 </div>
-                <div class="card-info-element">
-                    <i class="fas fa-dollar-sign"></i> 
-                    ${cars.price[0]}
+                <div class="card-info-element" style="font-weight: bold;">
+                    ${cars.transmision}
                 </div>
                 </div>
                 
