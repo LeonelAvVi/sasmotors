@@ -1736,6 +1736,7 @@ page heading
   text-align: center;
   background-color: #2a2a2a;
   position: relative;
+  padding-right: 0px;
 }
 .header-text{
   z-index: 0;
@@ -2799,10 +2800,7 @@ section.contact-us .info-item {
   padding: 32px;
 }
 
-.border-horizontal{
-  border-left: 3px solid #43434372;
-  border-right: 3px solid #43434372;
-}
+
 section.contact-us{
   padding: 80px 0px;
 }
@@ -2930,7 +2928,9 @@ section.contact-us .info-item a:hover {
   color: #BF0007;
 }
 
-
+.index-steps{
+  flex-direction: row;
+}
 
 /* 
 ---------------------------------------------
@@ -2942,7 +2942,51 @@ body {
   overflow-x: hidden;
 }
 
+
 @media (max-width: 767px) {
+  .page-header {
+    height: 40vh;
+  }
+  
+  .page-header::before {
+    left: 0%;
+    width: 100%; /* El 50% del ancho de la pantalla */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .page-header .content-front p{
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .page-header .content-front h2{
+    font-size: 28px;
+  }
+
+
+  footer .logo {
+    width: 50%;
+  }
+
+  .slide-information .information-number {
+    font-size: 60px;
+  }
+
+  .slide-information .information-title {
+    font-size: 14px;
+  }
+
+  .slide-information .information-text {
+    font-size: 12px;
+  }
+
+  .index-steps{
+    flex-direction: column;
+  }
+  .page-heading{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   }
@@ -2981,8 +3025,11 @@ body {
   .page-heading h2 {
     color: #fff;
     max-width: 100%;
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
+  }
+  .img-banner{
+    width: 100%;
   }
   .page-heading::before {
     left: 0;
@@ -3002,7 +3049,36 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px)  and (min-width: 480) {
+
+.page-heading {
+  /* padding-top: 208px; */
+  /* padding-bottom: 280px; */
+  padding-top: 161px;
+  padding-bottom: 145px;
+  padding-right: 62px;
+}
+
+.page-header::before {
+  left: 2%;
+  width: 90%; /* El 50% del ancho de la pantalla */
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+section.about-section-description{
+  text-align: center;
+}
+
+section.about-section-description .content-description{
+  width: 100%;
+}
+
+.page-header {
+  height: 40vh;
+}
+
+  .container {
+    max-width: 100% !important;
+  }
   .header-area .main-nav .nav li:first-child {
     padding-left: 15px !important;
   }
