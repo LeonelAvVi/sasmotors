@@ -39,15 +39,15 @@ https://templatemo.com/tm-576-snapx-photography
       <div class="container">
           <div class="row">
               <div class="col-12">
-                  <nav class="main-nav">
+                  <nav class="main-nav" id="nav-bar">
                       <!-- ***** Logo Start ***** -->
                       <a href="index.html" class="logo">
-                          <img src="assets/img/logo.webp" alt="SnapX Photography Template">
+                          <img src="assets/img/logo.webp" alt="template sasmotors">
                       </a>
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class="nav-active"><a href="index-real.html">Inicio</a></li>
+                          <li class="nav-active"><a href="index.html">Inicio</a></li>
                           
                           <li class="">  <!-- <li class="has-sub"> -->
                             <a href="about.html" >Nosotros</a>
@@ -123,8 +123,8 @@ https://templatemo.com/tm-576-snapx-photography
                     <select name="category" class="form-select" aria-label="Seleccionar Marca" id="category" onchange="this.form.click()">
                         <option selected>Seleccionar Marca</option>
                         <option name="mitsubishi" value="mitsubishi">Mitsubishi</option>
-                        <option name="jmc" value="jmc">JMC</option>
-                        <option name="fuso" value="fuso">FUSO</option>
+                        <option name="jmc" value="JMC">JMC</option>
+                        <option name="fuso" value="Mitsubishi Fuso">FUSO</option>
                     </select>
                 </fieldset>
               </div>
@@ -158,10 +158,12 @@ https://templatemo.com/tm-576-snapx-photography
                     </select>
                 </fieldset>
               </div> -->
-              <div class="col-lg-2">
+              <div class="col-lg-3">
                 <fieldset>
                     <label for="chooseprice" class="form-label"><span>04</span> Seleccionar color</label>
-                    <input type="text" id="favcolor" name="favcolor" placeholder="Color">
+                    <select name="color-car" class="form-select" aria-label="Seleccionar Color" id="color-car">
+                      <option selected>Seleccionar Color</option>
+                    </select>
                 </fieldset>
               </div>
               <div class="col-lg-2">                        
@@ -542,7 +544,7 @@ https://templatemo.com/tm-576-snapx-photography
     <div class="row">
       
       <div class="col-lg-12"  data-aos="fade-up">
-        <div class="owl-features owl-carousel" style="position: relative; z-index: 5;">
+        <div class="container-suggetions">
           <div class="item">
             <div class="closed-item">
               <img src="assets/images/closed-01.jpg" alt="">
@@ -561,7 +563,44 @@ https://templatemo.com/tm-576-snapx-photography
               </div>
             </div>
           </div>
-          
+
+          <div class="item">
+            <div class="closed-item">
+              <img src="assets/images/closed-01.jpg" alt="">
+              <div class="down-content">
+                <h4>
+                  John Doe
+                </h4>
+                <p>
+                  "Mi experiencia en SAS Motors fue excepcional. 
+                  Encontré el automóvil perfecto para 
+                  mi familia y yo. El servicio personalizado de Juan 
+                  y su equipo nos hizo sentir como en casa. 
+                  ¡Recomiendo encarecidamente SAS Motors para 
+                  tu próxima compra de automóvil!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="closed-item">
+              <img src="assets/images/closed-01.jpg" alt="">
+              <div class="down-content">
+                <h4>
+                  John Doe
+                </h4>
+                <p>
+                  "Mi experiencia en SAS Motors fue excepcional. 
+                  Encontré el automóvil perfecto para 
+                  mi familia y yo. El servicio personalizado de Juan 
+                  y su equipo nos hizo sentir como en casa. 
+                  ¡Recomiendo encarecidamente SAS Motors para 
+                  tu próxima compra de automóvil!"
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -657,11 +696,10 @@ https://templatemo.com/tm-576-snapx-photography
   
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <!-- <script src="assets/js/custom.js"></script> -->
   <script src="assets/js/index.js"></script>
   <script src="assets/js/carousel.js"></script>
-  <script src="assets/js/index.js"></script>
-  <script>
+    <script>
     loadCarousel();
   </script>
 

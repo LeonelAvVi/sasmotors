@@ -293,95 +293,94 @@ var dataCars = [
     }
 
 ]
-const buttonSearch = document.getElementById("modal_trigger");
 
-// Verifica si el elemento existe
-if (buttonSearch) {
-  // El botón con ID "button-search" existe en el documento
-  console.log("El botón existe.");
+//detectar el evento del boton de buscar
+document.getElementById("modal_trigger").addEventListener("click", (e)=>{
+    e.preventDefault();
+    changePageCars();
+});
 
-  // Agrega un evento click al botón
-  buttonSearch.addEventListener("click", function(event) {
-    event.preventDefault(); // Detiene todos los comportamientos por defecto
-    mostrarInformacion();
-  });
-} else {
-  // El botón con ID "button-search" no existe en el documento
-  console.log("El botón no existe.");
+function changePageCars(){
+    modelSelect = document.getElementById("model");
+    let url = dataCars.filter(car => car.name.toLowerCase() === modelSelect.value.toLowerCase())[0].url;
+
+    window.location.href = url;
 }
 
-function mostrarInformacion() {
-    const categorySelect = document.getElementById("category");
-    const modelSelect = document.getElementById("model");
-    const priceSelect = document.getElementById("price");
-    const favColorInput = document.getElementById("favcolor");
+
+
+// function mostrarInformacion() {
+//     const categorySelect = document.getElementById("category");
+//     const modelSelect = document.getElementById("model");
+//     const priceSelect = document.getElementById("price");
+//     const favColorInput = document.getElementById("favcolor");
   
-    const selectedCategory = categorySelect.value;
-    const selectedModel = modelSelect.value;
-    const selectedPrice = priceSelect.value;
+//     const selectedCategory = categorySelect.value;
+//     const selectedModel = modelSelect.value;
+//     const selectedPrice = priceSelect.value;
   
-    //quitar los espacios y poner todo en minuscula
-    const favoriteColor = favColorInput.value.trim().toLowerCase();
-    console.log(favoriteColor);
-    const mensaje = `Categoría: ${selectedCategory}\nModelo: ${selectedModel}\nPrecio: ${selectedPrice}\nColor Favorito: ${favoriteColor}`;
+//     //quitar los espacios y poner todo en minuscula
+//     const favoriteColor = favColorInput.value.trim().toLowerCase();
+//     console.log(favoriteColor);
+//     const mensaje = `Categoría: ${selectedCategory}\nModelo: ${selectedModel}\nPrecio: ${selectedPrice}\nColor Favorito: ${favoriteColor}`;
 
-    let content = document.getElementById("items-search");
-    content.innerHTML = "";
+//     let content = document.getElementById("items-search");
+//     content.innerHTML = "";
 
-    dataCars.forEach(element => {
-        if(element.name == modelSelect.value){
-            content.innerHTML += showCars(element);
-        }
-        let priceMin, priceMax = 0;
+//     dataCars.forEach(element => {
+//         if(element.name == modelSelect.value){
+//             content.innerHTML += showCars(element);
+//         }
+//         let priceMin, priceMax = 0;
 
-        switch(priceSelect.value){
-            case "15000":{
-                priceMin = 15000;
-                priceMax = 20000;
-                break;
-            }
-            case "20000":{
-                priceMin = 20000;
-                priceMax = 30000;
-                break;
-            }
-            case "30000":{
-                priceMin = 30000;
-                priceMax = 40000;
-                break;
-            }
-            case "40000":{
-                priceMin = 40000;
-                priceMax = 50000;
-                break;
-            }
-            case "50000":{
-                priceMin = 50000;
-                priceMax = 100000;
-                break;
-            }
+//         switch(priceSelect.value){
+//             case "15000":{
+//                 priceMin = 15000;
+//                 priceMax = 20000;
+//                 break;
+//             }
+//             case "20000":{
+//                 priceMin = 20000;
+//                 priceMax = 30000;
+//                 break;
+//             }
+//             case "30000":{
+//                 priceMin = 30000;
+//                 priceMax = 40000;
+//                 break;
+//             }
+//             case "40000":{
+//                 priceMin = 40000;
+//                 priceMax = 50000;
+//                 break;
+//             }
+//             case "50000":{
+//                 priceMin = 50000;
+//                 priceMax = 100000;
+//                 break;
+//             }
 
-        }
+//         }
 
-        element.price.forEach(precio => {
-            if(precio >= priceMin && precio <= priceMax){
-                content.innerHTML += showCars(element);
-            }
-        });
+//         element.price.forEach(precio => {
+//             if(precio >= priceMin && precio <= priceMax){
+//                 content.innerHTML += showCars(element);
+//             }
+//         });
 
-        element.colors.forEach(elementColor=>{
-            //eliminar espacios y poner a todo en minuscula
-            let color = elementColor.toLowerCase().replace(/\s/g, "");
-            if(color.includes(favoriteColor)){
-                console.log(elementColor);
-                content.innerHTML += showCars(element);
-            }
-        })
+//         element.colors.forEach(elementColor=>{
+//             //eliminar espacios y poner a todo en minuscula
+//             let color = elementColor.toLowerCase().replace(/\s/g, "");
+//             if(color.includes(favoriteColor)){
+//                 console.log(elementColor);
+//                 content.innerHTML += showCars(element);
+//             }
+//         })
 
 
-    });
+//     });
 
-  }
+//   }
 
 function showCars(cars){
     const namePath= cars.name.toLowerCase().replace(/\s/g, "-");
@@ -455,7 +454,7 @@ function cardCatalog(cars){
             
 
             </div>
-            <p class="sales">$ ${cars.price[0]}</p>
+            <p class="sales">${cars.transmision}</p>
         </div>
         </div>
     </div>
@@ -498,3 +497,108 @@ function cardCarousel(cars){
         </div>
     </div>`
 }
+
+//recuperar el valor del select con name="category"
+if (document.getElementById("category")) {
+    document.getElementById("category").addEventListener("change", function() {
+        // Obtener el valor de la marca seleccionada
+        let marcaSeleccionada = this.value;
+
+        // Obtener el segundo select
+        let modelosSelect = document.getElementById("model");
+
+        // Limpiar las opciones actuales
+        modelosSelect.innerHTML = '<option selected>Seleccionar Modelo</option>';
+
+        // Obtener la lista de modelos para la marca seleccionada
+        let modelos = dataCars.filter(car => car.marca.toLowerCase() === marcaSeleccionada.toLowerCase()).map(car => car.name);
+
+        console.log(modelos);
+        // Agregar nuevas opciones basadas en los modelos
+        modelos.forEach(modelo => {
+            agregarModelo(modelo);
+        });
+    });
+}
+
+if (document.getElementById("model")) {
+    document.getElementById("model").addEventListener("change", function() {
+        // Obtener el valor del modelo seleccionado
+        let modeloSeleccionado = this.value;
+
+        // Obtener el tercer select
+        let coloresSelect = document.getElementById("color-car");
+
+        // Limpiar las opciones actuales
+        coloresSelect.innerHTML = '<option selected>Seleccionar Color</option>';
+        let arrayColores = [];
+        // Obtener la lista de colores para el modelo seleccionado
+        let colores = dataCars.forEach(car => {
+            if(car.name.toLowerCase() === modeloSeleccionado.toLowerCase()){
+                console.log(car.name+'---'+modeloSeleccionado);
+                console.log(car.colors);
+                arrayColores = car.colors;
+            }
+        });
+
+        // Agregar nuevas opciones basadas en los colores
+        arrayColores.forEach(color => {
+            agregarColor(color);
+        });
+    });
+}
+
+function agregarModelo(modelo) {
+    let modelosSelect = document.getElementById("model");
+    let opcion = document.createElement("option");
+    opcion.text = modelo;
+    opcion.value = modelo.toLowerCase().replace(/\s+/g, ''); // Valor sin espacios ni mayúsculas
+    modelosSelect.add(opcion);
+}
+
+function agregarColor(color) {
+    let coloresSelect = document.getElementById("color-car");
+    let opcion = document.createElement("option");
+    opcion.text = color;
+    opcion.value = color.toLowerCase().replace(/\s+/g, ''); // Valor sin espacios ni mayúsculas
+    coloresSelect.add(opcion);
+}
+
+
+// Menú Toggle
+if (document.querySelectorAll('.menu-trigger').length) {
+    document.querySelectorAll('.menu-trigger').forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            var nav = document.querySelector('.header-area .nav');
+            if (nav.style.display === 'none' || nav.style.display === '') {
+                nav.style.display = 'block';
+                nav.style.height = 'auto';
+            } else {
+                nav.style.display = 'none';
+            }
+        });
+    });
+}
+
+// Animación del Elevador del Menú
+document.querySelectorAll('.scroll-to-section a[href*="#"]:not([href="#"])').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = this.hash.slice(1);
+        var target = document.getElementById(targetId) || document.querySelector('[name="' + targetId + '"]');
+        
+        if (target) {
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            if (width < 991) {
+                document.querySelector('.menu-trigger').classList.remove('active');
+                document.querySelector('.header-area .nav').style.display = 'none';
+            }
+            
+            window.scrollTo({
+                top: target.offsetTop - 20,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

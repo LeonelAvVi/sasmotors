@@ -849,7 +849,7 @@ section.catalog .catalog-search-content button{
     justify-content: flex-start;
     align-items: center;
     /* background-image: url("../img/bg-tag.webp"); */
-    width: 100%;
+    /* width: 100%; */
 }
 
 .card-slider{
@@ -1064,6 +1064,18 @@ section.contact .contact-form p{
     padding: 0;
 }
 
+.container-suggetions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    gap: 16px;
+}
+.container-suggetions.items .down-content{
+    z-index: 10000;
+}
+
 @media (min-width:480px) and (max-width: 1026px){
     
     .card-info {
@@ -1085,6 +1097,9 @@ section.contact .contact-form p{
 }
 
 @media (max-width: 767px) {
+    .container-suggetions{
+        flex-direction: column;
+    }
     .car-tag .car-tag-item {
         width: 49%;
         padding: 16px;
