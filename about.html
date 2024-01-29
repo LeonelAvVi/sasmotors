@@ -41,13 +41,13 @@ https://templatemo.com/tm-576-snapx-photography
               <div class="col-12">
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
-                      <a href="/index-real.html" class="logo">
-                          <img src="assets/img/logo.webp" alt="SnapX Photography Template">
+                      <a href="/index.html" class="logo">
+                          <img src="assets/img/logo.webp" alt="template sasmotors">
                       </a>
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class=""><a href="/index-real.html">Inicio</a></li>
+                          <li class=""><a href="/index.html">Inicio</a></li>
                           
                           <li class="nav-active">  <!-- <li class="has-sub"> -->
                             <a href="/about.html" >Nosotros</a>
@@ -379,7 +379,47 @@ https://templatemo.com/tm-576-snapx-photography
   
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/index.js"></script>
+  <!-- <script src="assets/js/custom.js"></script> -->
+  <script>
+    // Menú Toggle
+if (document.querySelectorAll('.menu-trigger').length) {
+    document.querySelectorAll('.menu-trigger').forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            var nav = document.querySelector('.header-area .nav');
+            if (nav.style.display === 'none' || nav.style.display === '') {
+                nav.style.display = 'block';
+                nav.style.height = 'auto';
+            } else {
+                nav.style.display = 'none';
+            }
+        });
+    });
+}
+
+// Animación del Elevador del Menú
+document.querySelectorAll('.scroll-to-section a[href*="#"]:not([href="#"])').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = this.hash.slice(1);
+        var target = document.getElementById(targetId) || document.querySelector('[name="' + targetId + '"]');
+        
+        if (target) {
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            if (width < 991) {
+                document.querySelector('.menu-trigger').classList.remove('active');
+                document.querySelector('.header-area .nav').style.display = 'none';
+            }
+            
+            window.scrollTo({
+                top: target.offsetTop - 20,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+  </script>
 
   <!-- animation library for notifications  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
