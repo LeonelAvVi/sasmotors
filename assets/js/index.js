@@ -437,12 +437,12 @@ function cardCatalog(cars){
             <!-- anio  -->
             <div class="inline ">
                 <p 
-                style="color: #FFBB00 !important; font-weight: bold; margin-right: 4px;"
+                style="color: #fff !important; font-weight: bold; margin-right: 4px;"
                 >CC</p>
                 <p>${cars.CC}</p>
             </div>
             <div class="inline" 
-                style="color: #FFBB00 !important;"
+                style="color: #fff !important;"
             >
                 <i class="fas fa-horse-head"></i>
                 <p>${cars.force}</p>

@@ -65,6 +65,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
   font-family: 'Montserrat', sans-serif;
+
   /* font-weight: normal; */
 }
 
@@ -150,12 +151,12 @@ body {
 }
 
 ::selection {
-  background: #BF0007;
+  background: #2B2B2A;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #BF0007;
+  background: #2B2B2A;
   color: #fff;
 }
 
@@ -177,9 +178,9 @@ body {
 
 .border-button a {
   font-size: 12px;
-  color: #BF0007;
+  color: #fff;
   background-color: transparent;
-  border: 2px solid #BF0007;
+  border: 2px solid #fff;
   padding: 10px 30px;
   display: inline-block;
   border-radius: 10px;
@@ -190,15 +191,15 @@ body {
 }
 
 .border-button a:hover {
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   color: #fff;
 }
 
 .main-button a {
   font-size: 15px;
   color: #fff;
-  background-color: #BF0007;
-  border: 1px solid #BF0007;
+  background-color: #2B2B2A;
+  border: 1px solid #2B2B2A;
   padding: 10px 30px;
   display: inline-block;
   border-radius: 10px;
@@ -210,7 +211,7 @@ body {
 
 .main-button a:hover {
   background-color: transparent;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .section-heading {
@@ -223,7 +224,7 @@ body {
 .section-heading h6 {
   font-size: 15px;
   text-transform: uppercase;
-  color: #BF0007;
+  color: #2B2B2A;
   font-weight: bold !important;
 }
 
@@ -233,11 +234,11 @@ body {
   font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #212741;
+  color: #808181;
 }
 
 .section-heading h4 em {
-  color: #BF0007;
+  color: #2B2B2A;
   font-style: normal;
   font-weight: bold !important;
 }
@@ -268,7 +269,7 @@ Header Style
 }
 
 .header-area {
-  background-color: #fff;
+  background-color: #010101;
   position: absolute;
   height: 96px;
   top: 0;
@@ -303,7 +304,7 @@ Header Style
 }
 
 .header-area .main-nav .logo img {
-  max-width: 102px;
+  /* max-width: 102px; */
 }
 
 .background-header .main-nav .logo {
@@ -339,18 +340,19 @@ Header Style
 .header-area .main-nav .nav li {
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #BF0007;
+  background-color: #dbdbdb;
+  color: #000;
 }
 
 
 .nav-active{
   /* border-bottom: 3px solid #FFBB00; */
   padding: 0px 12px !important;
-  background-color: #FFBB00 !important;
-  color: black !important;
+  background-color: #2b2b2a !important;
+  color: white !important;
 }
 .nav-active a{
-  color: black !important;
+  color: white !important;
 }
 
 .header-area .main-nav .nav li a {
@@ -358,7 +360,7 @@ Header Style
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
-  color: #fff;
+  color: #040404;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -447,7 +449,7 @@ Header Style
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #BF0007!important;
+  color: #2B2B2A!important;
   padding-left: 25px;
 }
 
@@ -619,18 +621,19 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #BF0007!important;
+    color: #2B2B2A!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: #010101;
     padding: 0px 15px;
     height: auto;
     box-shadow: none;
     text-align: center;
+    position: fixed;
   }
   .header-area .container {
     padding: 0px;
@@ -680,7 +683,7 @@ Header Style
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #BF0007!important;
+    color: #2B2B2A!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -781,13 +784,13 @@ section.popupBody {
 
 .btn {
   padding: 10px 20px;
-  background: #BF0007;
+  background: #2B2B2A;
   color: #fff;
   transition: all .3s;
 }
 
 .btn_red {
-  background: #BF0007;
+  background: #2B2B2A;
   color: #FFF;
 }
 
@@ -829,7 +832,7 @@ a.btn_red {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #BF0007;
+  color: #2B2B2A;
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
@@ -847,7 +850,7 @@ a.btn_red {
   right: 0;
   top: 0;
   padding: 10px 15px;
-  background: #BF0007;
+  background: #2B2B2A;
   cursor: pointer;
   color: #fff;
   font-size: 16px;
@@ -967,7 +970,7 @@ a.btn_red {
   clear: both;
   overflow: hidden;
   text-decoration: none;
-  color: #BF0007;
+  color: #2B2B2A;
   transition: all .3s;
 }
 /* User Register Form */
@@ -1037,7 +1040,7 @@ Banner Style
 
 .main-banner h2 em {
   font-style: normal;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .main-banner p {
@@ -1070,7 +1073,7 @@ Banner Style
 
 .main-banner .big-border-button a:hover {
   background-color: #fff;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .main-banner .icon-button a {
@@ -1089,7 +1092,7 @@ Banner Style
 }
 
 .main-banner .icon-button a:hover {
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 
@@ -1140,7 +1143,7 @@ section.featured-items {
 
 .featured-items .item .thumb .hover-effect .content h4 {
   font-size: 20px;
-  color: #BF0007;
+  color: #2B2B2A;
   margin-bottom: 22px;
 }
 
@@ -1197,7 +1200,7 @@ section.featured-items {
   font-size: 24px;
   display: inline-block;
   color: #fff;
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   border-radius: 50%;
   opacity: 0.75;
   transition: all .3s;
@@ -1264,7 +1267,7 @@ section.popular-categories .main-button {
   padding: 5px 8px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  color: #BF0007;
+  color: #2B2B2A;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
   margin-right: 10px;
@@ -1286,7 +1289,7 @@ section.popular-categories .main-button {
 
 .popular-item .thumb span.category {
   font-size: 15px;
-  color: #BF0007;
+  color: #2B2B2A;
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1300,7 +1303,7 @@ section.popular-categories .main-button {
 
 .popular-item .thumb span.likes {
   font-size: 15px;
-  color: #BF0007;
+  color: #2B2B2A;
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1347,7 +1350,7 @@ closed contests
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, #051937,#00000000);
+  background-image: linear-gradient(to bottom, #010101,#00000000);
   top: 0;
   left: 0;
   z-index: 1;
@@ -1368,12 +1371,12 @@ closed contests
   width: 50% !important;
   border-radius: 50%;
   z-index: 10;
-  border: 5px solid #FFBB00;
+  border: 5px solid #2B2B2A;
 }
 
 .closed-item .thumb span.winner {
   font-size: 15px;
-  color: #BF0007;
+  color: #2B2B2A;
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1392,7 +1395,7 @@ closed contests
 
 .closed-item .thumb span.price {
   font-size: 15px;
-  color: #BF0007;
+  color: #2B2B2A;
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1471,7 +1474,7 @@ closed contests
 
 .closed-contests .owl-nav .owl-prev span:hover,
 .closed-contests .owl-nav .owl-next span:hover {
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   color: #fff;
 }
 
@@ -1500,7 +1503,7 @@ pricing-plans
 }
 
 .pricing-item:hover h4 {
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .pricing-item img {
@@ -1519,7 +1522,7 @@ pricing-plans
 
 .pricing-item ul li {
   font-size: 15px;
-  color: #BF0007;
+  color: #2B2B2A;
   margin-bottom: 10px;
 }
 
@@ -1540,7 +1543,7 @@ pricing-plans
 
 .pricing-item span.price {
   font-size: 30px;
-  color: #BF0007;
+  color: #2B2B2A;
   font-weight: 700;
   display: inline-block;
   margin-top: 30px;
@@ -1562,7 +1565,7 @@ footer.no-space {
 }
 
 footer {
-  background-color: #253241;
+  background-color: #2b2b2a;
   text-align: center;
   padding-top: 52px;
   /* margin-top: 120px; */
@@ -1573,12 +1576,12 @@ footer {
 footer .logo {
   margin-bottom: 30px;
   
-  width: 12%;
+  width: 25%;
 }
 
 footer i{
-  color: #253241;
-  background-color: #FFBB00;
+  color: #2b2b2a;
+  background-color: #fff;
   padding: 8px;
   font-size: 24px;
   border-radius: 999px;
@@ -1603,7 +1606,7 @@ footer h4{
   font-weight: 700;
   margin-bottom: 30px;
   text-transform: uppercase;
-  color: #d9d9d9;
+  color: #fff;
 }
 
 footer  .footer-section ul{
@@ -1624,8 +1627,8 @@ footer  .footer-section ul li a{
 }
 
 footer  .footer-section ul li i{
-  color: #FFBB00;
-  background-color: #253241;
+  color: #fff;
+  background-color: #2b2b2a;
   padding: 8px;
   font-size: 24px;
   border-radius: 999px;
@@ -1641,19 +1644,24 @@ footer  .footer-section button{
   margin-top: 8px;
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
-  background-color: #BF0007;
+  color: #010101;
+  background-color: #fff;
   border: none;
   padding: 15px 38px;
   border-radius: 4px;
   transition: all .3s;
 }
 
+footer .footer-section button:hover{
+  background-color: #010101;
+  color: #fff;
+}
+
 footer .copy{
 
   margin-top: 30px;
   padding: 20px 0px;
-  background-color: #BF0007;
+  background-color: #010101;
   font-weight: bold;
   margin-left: -20px;
 }
@@ -1688,7 +1696,7 @@ page header
   left: 20%;
   bottom: 0;
   width: 75%; /* El 50% del ancho de la pantalla */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(1, 1, 1, 0.7);
   z-index: 1; /* Para asegurarse de que esté detrás del contenido principal */
   clip-path: polygon(0% 0%, 50% 0%, 75% 100%, 25% 100%);
 }
@@ -1698,7 +1706,7 @@ page header
   z-index: 1;
 }
 .page-header .content-front h2{
-  color: #FFBB00;
+  color: #fff;
   font-size: 32px;
   font-weight: 700;
   line-height: 74px;
@@ -1708,7 +1716,7 @@ page header
 }
 .page-header .content-front p{
   width: 50%;
-  color: #fff;
+  color: #dbdbdb;
   font-size: 18px;
 
   text-align: center;
@@ -1822,7 +1830,7 @@ page heading
 
 .page-heading h2 em {
   font-style: normal;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .page-heading p {
@@ -1883,18 +1891,18 @@ Contests Page
 
 #search-form {
   margin-top: -69px;
-    background-color: #fff;
+    background-color: #2B2B2A;
     border-radius: 1px;
     padding: 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     z-index: 10;
     position: relative;
-    border-bottom: 3px solid #FFBB00;
+    border-bottom: 3px solid #dbdbdb;
 }
 
 #search-form label {
   font-size: 12px;
-  color: #2a2a2a;
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -1902,7 +1910,7 @@ Contests Page
 
 #search-form label span{
   font-size: 12px;
-  color: #BF0007;
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -1928,9 +1936,9 @@ Contests Page
 #search-form button {
   margin-top: 30px;
   font-size: 15px;
-  color: rgb(255, 255, 255);
-  background-color: #BF0007;
-  border: 1px solid #BF0007;
+  color: #010101;
+  background-color: #fff;
+  border: 1px solid #2B2B2A;
   padding: 10px 40px;
   display: inline-block;
   border-radius: 1px;
@@ -1941,8 +1949,8 @@ Contests Page
 }
 
 #search-form button:hover {
-  background-color: transparent;
-  color: #BF0007;
+  background-color: #808181;
+  color: #fff;
 }
 
 .photos-videos .item {
@@ -1963,7 +1971,7 @@ Contests Page
   height: 46px;
   background-color: #fff;
   border-radius: 50%;
-  color: #BF0007;
+  color: #2B2B2A;
   text-align: center;
   line-height: 46px;
   position: absolute;
@@ -2015,7 +2023,7 @@ Contests Page
 .photos-videos .item .down-content h6 {
   text-align: right;
   font-size: 15px;
-  color: #BF0007;
+  color: #2B2B2A;
   font-weight: 500;
   margin-top: 24px;
   margin-right: 30px;
@@ -2038,7 +2046,7 @@ Contests Page
 .contest-win .contest-item .top-content span.award {
   font-size: 15px;
   color: #fff;
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   border-radius: 10px;
   padding: 8px 12px;;
 }
@@ -2047,7 +2055,7 @@ Contests Page
   float: right;
   font-size: 20px;
   font-weight: 700;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .contest-win .contest-item h4 {
@@ -2126,15 +2134,15 @@ Contests Page
   display: inline-block;
   text-align: center;
   line-height: 44px;
-  border: 1px solid #BF0007;
+  border: 1px solid #2B2B2A;
   border-radius: 50%;
-  color: #BF0007;
+  color: #2B2B2A;
   font-size: 20px;
   font-weight: 600;
 }
 
 .contest-win ul.pagination li.active a {
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   color: #fff;
 }
 
@@ -2169,7 +2177,7 @@ Contest Details Page
 .contest-details .top-content ul li {
   font-size: 18px;
   font-weight: 500;
-  color: #BF0007;
+  color: #2B2B2A;
   margin-left: 15px;
 }
 
@@ -2184,7 +2192,7 @@ Contest Details Page
 
 .contest-details .top-content span.open {
   font-size: 15px;
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   color: #fff;
   padding: 8px 12px;
   border-radius: 10px;
@@ -2194,7 +2202,7 @@ Contest Details Page
 .contest-details .top-content span.wish-list {
   font-size: 15px;
   font-weight: 500;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .contest-details .top-content span.wish-list i {
@@ -2300,12 +2308,12 @@ Contest Details Page
 }
 
 .contest-waiting .waiting-item:hover .down-content {
-  background-color: #FFBB00;
+  background-color: #010101;
 }
 .contest-waiting .waiting-item:hover .down-content h4,
 .contest-waiting .waiting-item:hover .down-content p
 {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .contest-waiting .waiting-item img {
@@ -2337,14 +2345,20 @@ Contest Details Page
 }
 
 .contest-waiting .waiting-item .down-content {
-  background-color: #051937;
+  background-color: #808181;
   padding: 8px 24px;
   transition: all .3s;
 }
 
-.contest-waiting .waiting-item .down-content h4 {
+.contest-waiting .waiting-item .down-content h4,
+.contest-waiting .waiting-item .down-content p
+{
+  color: #010101;
+}
+
+.contest-waiting .waiting-item .down-content h4{
   font-size: 24px;
-  color: #fff;
+  color: #010101;
   font-weight: 700;
   margin-bottom: 8px;
   text-align: left;
@@ -2374,7 +2388,7 @@ Contest Details Page
 .contest-waiting .waiting-item .down-content span.price em,
 .contest-waiting .waiting-item .down-content span.deadline em {
   font-style: normal;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .contest-waiting ul.pagination {
@@ -2392,15 +2406,15 @@ Contest Details Page
   display: inline-block;
   text-align: center;
   line-height: 44px;
-  border: 1px solid #BF0007;
+  border: 1px solid #2B2B2A;
   border-radius: 50%;
-  color: #BF0007;
+  color: #2B2B2A;
   font-size: 20px;
   font-weight: 600;
 }
 
 .contest-waiting ul.pagination li.active a {
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   color: #fff;
 }
 
@@ -2466,7 +2480,7 @@ Categories Page
   padding: 5px 8px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  color: #BF0007;
+  color: #2B2B2A;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
   margin-right: 10px;
@@ -2510,7 +2524,7 @@ Categories Page
 .featured-contests .item .hover-effect .content .top-content span.award {
   font-size: 15px;
   color: #fff;
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   border-radius: 10px;
   padding: 8px 12px;;
 }
@@ -2519,7 +2533,7 @@ Categories Page
   float: right;
   font-size: 20px;
   font-weight: 700;
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 .featured-contests .item .hover-effect .content h4 {
@@ -2650,8 +2664,8 @@ Categories Page
 }
 
 .testimonials .owl-dots .active {
-  background-color: #BF0007;
-  border: 1px solid #BF0007;
+  background-color: #2B2B2A;
+  border: 1px solid #2B2B2A;
 }
 
 
@@ -2783,7 +2797,7 @@ section.portfolio .thumb .hover-effect .content ul li a {
 }
 
 section.portfolio .thumb .hover-effect .content ul li a:hover {
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   color: #fff;
 }
 
@@ -2810,26 +2824,26 @@ section.contact-us{
 
 section.contact-us .info-item i {
   font-size: 32px;
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   color: #fff;
   width: 80px;
   height: 80px;
   display: inline-block;
   text-align: center;
   line-height: 80px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-bottom: 25px;
 }
 section.contact-us .info-item img {
   font-size: 32px;
-  /* background-color: #BF0007; */
+  /* background-color: #2B2B2A; */
   color: #fff;
   width: 82px;
   height: 82px;
   display: inline-block;
   text-align: center;
   line-height: 80px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-bottom: 25px;
 }
 .index-image{
@@ -2849,7 +2863,7 @@ section.contact-us .info-item img {
 
 section.contact-us .info-item h4 {
   font-size: 25px;
-  color: #BF0007;
+  color: #2B2B2A;
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -2862,7 +2876,7 @@ section.contact-us .info-item a {
 }
 
 section.contact-us .info-item a:hover {
-  color: #BF0007;
+  color: #2B2B2A;
 }
 
 #contact {
@@ -2907,28 +2921,28 @@ section.contact-us .info-item a:hover {
 
 #contact input::placeholder, 
 #contact textarea::placeholder {
-  color: #212741;
+  color: #808181;
 }
 #contact button.orange-button {
   font-size: 14px;
   width: 100%;
   text-align: center;
   color: #fff;
-  background-color: #BF0007;
+  background-color: #2B2B2A;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 10px;
   font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 0.5px;
-  border: 1px solid #BF0007;
+  border: 1px solid #2B2B2A;
   transition: all .3s;
 }
 
 #contact button.orange-button:hover {
   background-color: transparent;
-  border: 1px solid #BF0007;
-  color: #BF0007;
+  border: 1px solid #2B2B2A;
+  color: #2B2B2A;
 }
 
 .index-steps{
