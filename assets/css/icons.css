@@ -2,10 +2,24 @@
     background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNmZmY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00NTMuMSwxNTAuN2MtNy43LTcuNS0xNS42LTE0LjktMjMuNS0yMi4yYy01LjctNS4zLTkuNC0xMS43LTExLjEtMTkuM2MtMi4xLTEwLTQuNC0xOS45LTYuOS0yOS43DQoJCWMtNS41LTIwLjktMTguNC0zNC42LTM5LjktMzkuMWMtMTIuMS0yLjUtMjQuNi0yLTM3LTIuN2MtOC41LTAuNS0xNi4xLTIuNy0yMi45LTcuOWMtOC40LTYuNS0xNi44LTEyLjgtMjUuNC0xOQ0KCQljLTE4LjEtMTIuOS00Mi40LTEyLjktNjAuNSwwYy04LjcsNi4zLTE3LjMsMTIuOC0yNS45LDE5LjNjLTUuOCw0LjQtMTIuMyw2LjktMTkuNiw3LjRjLTExLDAuNy0yMi4xLDEuMy0zMy4xLDEuOQ0KCQljLTIyLDEuMy00MCwxNS45LTQ1LjgsMzcuM2MtMi4yLDguMi00LjQsMTYuNS01LjksMjQuOWMtMi4yLDEyLjktNy44LDIzLjUtMTgsMzEuOGMtNi4xLDUtMTEuNywxMC43LTE3LjQsMTYuMg0KCQljLTE4LDE3LjUtMjEuNywzOS43LTEwLjUsNjIuMmM0LjUsOS4xLDkuMSwxOC4yLDEzLjcsMjcuM2MyLjcsNS40LDQuMywxMS4xLDMuOSwxNy4xYy0wLjQsNi4yLTEuNSwxMi40LTIuMSwxOC43DQoJCWMtMC45LDkuNy0zLjUsMTkuMy0yLjEsMjljMi45LDE5LjksMTMuOCwzMy43LDMyLjIsNDEuN2MxMSw0LjgsMjEuOSw5LjYsMzIuOSwxNC40YzMuOSwxLjcsNC42LDMuOCwyLjYsOA0KCQljLTE0LjMsMzAuMy0yOC4zLDYwLjctNDIuNSw5MWMtMS43LDMuNy0yLjcsNy4xLDAsMTAuNmMyLjgsMy41LDYuNiwzLjIsMTAuNCwyLjVjMTMtMi4yLDI1LjktNC40LDM4LjgtNi45YzIuOC0wLjUsNCwwLDUuNCwyLjQNCgkJYzYuMSwxMC43LDEyLjQsMjEuMywxOC41LDMyYzEuNCwyLjUsMyw0LjksNC45LDdjMC44LDAuOSwyLDEuNCwzLjMsMS40aDMuM2MwLjYsMCwxLjItMC4xLDEuOC0wLjNjMy43LTEuMyw1LjMtNC41LDYuOC03LjkNCgkJYzExLjgtMjUuNiwyMy44LTUxLjIsMzUuNi03Ni44YzEuMy0yLjksMy40LTQuNiw2LjUtNS42YzcuOC0yLjMsMTUuNS00LjcsMjMuMy02LjljNS43LTEuNiwxMS43LTEuNywxNy41LTAuMg0KCQljNy4yLDEuOSwxNC4yLDQuOCwyMS41LDYuM2M2LjQsMS4zLDkuNyw1LjEsMTIuMywxMC44YzExLjMsMjUsMjMsNDkuNywzNC42LDc0LjZjMi4xLDQuNSw1LjcsOSwxMiw2LjVjMy4zLTEuMyw0LjgtNSw2LjYtOA0KCQljNi4zLTExLDEyLjctMjEuOSwxOS0zMi45YzEuMy0yLjMsMi40LTMuMSw1LjMtMi41YzEyLjksMi41LDI1LjksNC42LDM4LjgsNi45YzMuOCwwLjcsNy43LDEsMTAuNC0yLjVjMi43LTMuNSwxLjgtNi45LDAuMS0xMC42DQoJCWMtMTMuOC0yOS42LTI3LjUtNTkuMi00MS4zLTg4LjljLTQtOC42LTQtOC42LDQuNy0xMi41YzEwLjctNC43LDIxLjUtOSwzMi0xMy45YzE5LjQtOS4yLDMwLjctMjksMjguOC01MC4zDQoJCWMtMC44LTkuMy0yLjEtMTguNy0zLjUtMjcuOWMtMS41LTEwLjItMC44LTE5LjgsNC40LTI5LjFjNC44LTguNiw5LjEtMTcuNSwxMy4zLTI2LjVDNDczLDE5MCw0NjguOSwxNjYuMSw0NTMuMSwxNTAuN3oNCgkJIE0xOTguOCw0MjIuMWMtOS4yLDE5LjktMTguNCwzOS41LTI3LjgsNTkuOGMtMC4yLDAuNC0wLjgsMC41LTEuMSwwYy0xLjctMy4xLTMuMi01LjgtNC43LTguNWMtNC02LjgtOC4xLTEzLjUtMTItMjAuNA0KCQljLTIuNi00LjUtNi02LTExLjEtNWMtMTAuNCwyLjEtMjEsMy43LTMyLjQsNS43Yy0wLjUsMC4xLTAuOC0wLjQtMC42LTAuOGMxMS43LTI1LjEsMjIuOS00OS40LDM0LjYtNzQuNGMwLjItMC40LDAuOC0wLjUsMS0wLjENCgkJYzQsNiw3LjgsMTEuNSwxMS4zLDE3LjJjOCwxMi44LDE5LjIsMjEsMzMuOSwyNC40YzAsMCwwLDAsMC4xLDBjMi43LDAuMyw1LjMsMC43LDguNSwxLjFDMTk4LjcsNDIxLjMsMTk5LDQyMS43LDE5OC44LDQyMi4xeg0KCQkgTTQwNC40LDQ1Mi43YzAuMiwwLjQtMC4xLDAuOS0wLjYsMC44Yy0zLjYtMC4yLTYuOC0wLjctOS45LTEuOGMwLDAtMC4xLDAtMC4xLDBjLTcuNC0xLjItMTQuOS0yLjItMjIuMy0zLjYNCgkJYy01LjktMS04LjMtMC4xLTExLjQsNS4yYy01LjQsOS4zLTEwLjgsMTguNi0xNi42LDI4LjZjLTAuMiwwLjQtMC44LDAuNC0xLDBjLTkuNC0yMC4zLTE4LjYtNDAtMjcuOS02MGMtMC4yLTAuNCwwLjEtMC44LDAuNS0wLjgNCgkJYzE5LjUtMS44LDMzLjMtMTEuNSw0My0yNy44YzEuMi0yLjEsMi44LTQuMSw0LjItNi4xaDBjMS45LTMuMSwzLjgtNi4xLDYuMS05LjhjMC4yLTAuNCwwLjgtMC40LDEsMC4xDQoJCUMzODEuMiw0MDIuOSwzOTIuNyw0MjcuNyw0MDQuNCw0NTIuN3ogTTQ0Ny43LDIwNS44Yy0zLjgsNy41LTcuMiwxNS4xLTExLjQsMjIuNGMtNy4yLDEyLjYtOC43LDI1LjktNi40LDQwLjENCgkJYzEuNSw5LjEsMi41LDE4LjMsMy40LDI3LjVjMS40LDEzLjYtNywyNy44LTE5LjUsMzMuMWMtOC40LDQuNy0xNy41LDgtMjYuNCwxMS43Yy04LjIsMy41LTE1LjksNy42LTIyLjQsMTMuOWgwDQoJCWMtOC40LDEwLjYtMTUuMSwyMi40LTIyLjcsMzMuNWMtMy44LDUuNy04LjIsMTAuNy0xNC44LDEzLjNjLTguMSw0LjYtMTYuNiw0LjctMjUuMywyLjJjLTguOC0yLjUtMTcuNy01LTI2LjQtOA0KCQljLTEzLjMtNC42LTI2LjQtNC41LTM5LjcsMC4xYy04LjUsMy0xNy4zLDUuNC0yNiw3LjhjLTE2LDQuNi0zMC4zLTAuNy0zOS43LTE0LjVjLTQuNS02LjctOS4zLTEzLjMtMTMuMi0yMC4zDQoJCWMtOC4xLTE0LjMtMTkuOC0yMy45LTM1LjMtMjkuM2MtNy4zLTIuNS0xNC4yLTYtMjEuMy05LjFjLTE1LjctNi45LTIzLjQtMjAuNy0yMS4zLTM3LjhjMS40LTExLjMsMi44LTIyLjYsMy45LTMzLjkNCgkJYzAuOS05LjEtMS4yLTE3LjctNS4yLTI1LjhjLTQuOC05LjctOS44LTE5LjQtMTQuNi0yOS4xYy03LjUtMTUuMi00LjktMzAuMiw3LjMtNDJjNS43LTUuNSwxMS4yLTExLjIsMTcuNC0xNi4yDQoJCWMxMy0xMC42LDIwLjQtMjQuMiwyMy4yLTQwLjdjMS4zLTcuNCwzLjItMTQuOCw1LTIyLjFjNC0xNi41LDE2LjctMjYuNiwzMy42LTI3LjVjMTIuNS0wLjcsMjUuMS0wLjgsMzcuNS0yLjYNCgkJYzguMi0xLjIsMTUuNC00LjcsMjEuOS05LjZjOC4xLTYsMTYuMS0xMi4xLDI0LjItMTguMWMxNC42LTExLDI5LjktMTEuMSw0NC42LTAuMmM1LjIsMy44LDEwLjcsNy4zLDE1LjQsMTEuNg0KCQljMTUsMTMuOCwzMywxOC4zLDUyLjgsMTguMWM3LjktMC4xLDE1LjgsMC4yLDIzLjYsMmgwYzE0LjIsMy4zLDIyLjIsMTIuNywyNS43LDI2LjNjMi44LDExLDUuMiwyMi4xLDcuOSwzMy4xDQoJCWMyLjEsOC43LDYuNSwxNi4yLDEyLjksMjIuNGM3LjYsNy4zLDE1LjQsMTQuNSwyMywyMS44QzQ1NC4yLDE3My44LDQ1Ni42LDE4OCw0NDcuNywyMDUuOHoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU3LjEsNzYuN2MtNzMuNC0xLjMtMTM0LjMsNTguOS0xMzUuMSwxMzMuNGMtMC44LDczLjcsNTguOSwxMzQuMSwxMzMuNSwxMzUuMQ0KCQljNzUuNC0wLjEsMTM0LjItNjAuOCwxMzQuOS0xMzMuNEMzOTEuMiwxMzguMywzMzIsNzgsMjU3LjEsNzYuN3ogTTI3OC40LDMyNi45Yy01NC44LDEwLjItMTA4LjYtMTguMS0xMzAuNi02OC45DQoJCWMtMC4zLTAuNy0wLjUtMS42LTAuNy0yLjNjMCwwLDAsMCwwLDBjMCwwLDAsMCwwLDBjLTUuMS0xMC4xLTcuNC0yMS04LjUtMzIuMWMtMi42LTI3LjIsMi45LTUyLjYsMTcuNy03NS44DQoJCWMwLjItMC4zLDAuNS0wLjQsMC43LTAuNmMxMi44LTIxLDMwLjktMzUuOSw1My40LTQ1LjJjNjguOS0yOC40LDE0NC43LDExLjEsMTYxLjMsODMuOEMzODYuNCwyNDkuNywzNDMuNCwzMTQuOCwyNzguNCwzMjYuOXoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzM5LjcsMTY1LjZjLTUuOS0xOS42LTI5LjctMjUuNi00NC40LTExLjFjLTE3LjcsMTcuNS0zNS4yLDM1LjMtNTIuNSw1My4yYy0yLjcsMi43LTMuOSwyLjUtNi40LTAuMQ0KCQljLTYuNS02LjgtMTMuMS0xMy41LTE5LjktMjBjLTEwLjgtMTAuMi0yNy4xLTkuNy0zNy40LDAuOGMtMTAsMTAuMi0xMC4zLDI2LjYtMC4yLDM3YzEzLjksMTQuMywyOC4xLDI4LjMsNDIuMyw0Mi40DQoJCWM1LDUsMTEuMyw3LjMsMTguMSw3LjVjNy4zLTAuMSwxMy42LTIuMywxOC42LTcuM2MyNS40LTI1LjUsNTAuNy01MSw3NS45LTc2LjdDMzQwLjcsMTg0LjEsMzQyLjUsMTc1LjEsMzM5LjcsMTY1LjZ6IE0zMjMuMSwxNzkuMg0KCQljLTAuOSwxLjQtMi4xLDIuNS0zLjMsMy43Yy0yMy42LDIzLjgtNDcuMSw0Ny42LTcwLjcsNzEuNGMtNi44LDYuOS0xMi4xLDYuOS0xOSwwYy0xMi42LTEyLjYtMjUuMi0yNS4yLTM3LjgtMzcuOA0KCQljLTIuNi0yLjYtNC45LTUuNC00LjctOWMtMC4xLTUuMSwyLjItOC40LDYuMi0xMC4yYzQuNS0yLDguNy0xLDEyLjIsMi41YzguMiw4LjIsMTYuMywxNi4zLDI0LjUsMjQuNWM3LjgsNy44LDEwLjIsNy44LDE3LjksMC4xDQoJCWMxOC45LTE5LjEsMzcuOS0zOC4yLDU2LjgtNTcuM2MzLjYtMy42LDcuNS01LjksMTIuOC0zLjlDMzI0LjUsMTY1LjgsMzI3LDE3My40LDMyMy4xLDE3OS4yeiIvPg0KPC9nPg0KPC9zdmc+DQo=");
 }
 
+#content-statistics button{
+    background-color: #fff;
+    color: #010101;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all .5s;
+}
+/* hover */
+#content-statistics button:hover{
+    background-color: #010101;
+    color: #fff;
+}
+
 .pd-0{
     padding: 0px !important;
     line-height: 16px !important;
-    color: #FFBB00 !important;
+    color: #ffffff !important;
 }
 .carousel-inner {
     padding: 1em;
@@ -55,7 +69,7 @@
 }
 
 .slide-cars{
-    background-color: #253241;
+    background-color: #2b2b2a;
     
 }
 
@@ -98,11 +112,11 @@
     font-size: 30px;
     font-weight: 700;
     text-transform: capitalize;
-    color: #fff;
+    color: #dbdbdb;
   }
   
   .section-carusel h4 em {
-    color: #BF0007;
+    color: #fff;
     font-style: normal;
   }
   
@@ -121,12 +135,12 @@
   }
   
   .slider-buttons .carousel-control-prev{
-    background-color: #BF0007;
+    background-color: #808181;
     opacity: 1 !important;
     color: #000;
   }
   .slider-buttons .carousel-control-next{
-    background-color: #FFBB00;
+    background-color: #dbdbdb;
     opacity: 1 !important;
     color: #000;
   }
@@ -159,7 +173,7 @@
 }
 
 .carousel-item:hover .card-body{
-    background-color: #FFBB00;
+    background-color: #808181;
     cursor: pointer;
 }
 
@@ -188,7 +202,7 @@
 }
 
 .slide-information .information-number span{
-    color: #BF0007;
+    color: #2B2B2A;
 }
 
 .slide-information .information-title{
@@ -221,7 +235,7 @@ section.about-section .info-item{
 
 section.about-section .info-item h4,
 section.about-section .info-item p{
-    color: #121212 !important;
+    color: #121212;
 }
 
 section.about-section .info-item:hover{
@@ -230,8 +244,15 @@ section.about-section .info-item:hover{
 }
 
 section.about-section .midle{
-    background-color: #FFBB00;
+    background-color: #101010;
 }
+
+section.about-section .midle h4,
+section.about-section .midle p,
+section.about-section .midle img{
+    color: #fff;
+}
+
 
 /* about section  description*/
 
@@ -259,7 +280,7 @@ section.about-section-description::before {
   }
 
 section.about-section-description .content-description{
-    /* background-color: #253241; */
+    /* background-color: #2b2b2a; */
     width: 50%;
     padding: 32px;
     position: relative;
@@ -282,7 +303,7 @@ section.about-section-description .content-description .description{
 
 section.about-section-description .content-description h2 span,
 section.about-section-description .content-description p span {
-    color: #BF0007;
+    color: #2B2B2A;
     font-weight: bold;
 }
 
@@ -292,7 +313,7 @@ section.about-section-description .content-description p span {
 /* about section  stadistc*/
 section.statistics{
     position: relative;
-    background-color: #253241;
+    background-color: #2b2b2a;
     padding: 52px;
 }
 
@@ -333,7 +354,7 @@ section.statistics .info-item:hover{
 }
 section.statistics .information{
     position: relative;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     z-index: 2;
 }
 
@@ -351,9 +372,10 @@ section.statistics .information h4{
 
 section.marks{
   width: 100%;
-  background-image: url('../img/bg-closed.webp'); 
-  background-size: cover;
-  background-position: center;
+  /* background-image: url('../img/bg-closed.webp');  */
+  /* background-size: cover;
+  background-position: center; */
+  background-color: #010101;
   position: relative;
   padding: 40px;
   margin-bottom: 52px;
@@ -363,7 +385,7 @@ section.marks::before {
   content: "";
   position: absolute;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.519);
+  /* background-color: rgba(255, 255, 255, 0.519); */
   top: 0;
   left: 0;
   height: 100%;
@@ -372,7 +394,7 @@ section.marks::before {
 
 section.marks img{
     width: auto;
- height: 92px;
+ height: 60px;
  position: relative;
  z-index: 10;
  object-fit: cover;
@@ -389,7 +411,7 @@ section.catalog{
 }
 
 section.catalog .catalog-search-title{
-    background-color: #BF0007;
+    background-color: #2B2B2A;
     text-align: center;
 }
 
@@ -461,7 +483,7 @@ section.catalog .catalog-search-content .range input{
 section.catalog .catalog-search-content button{
     width: 100%;
     height: 48px;
-    background-color: #BF0007;
+    background-color: #2B2B2A;
     border: none;
     border-radius: 0px;
     color: #fff;
@@ -475,7 +497,7 @@ section.catalog .catalog-search-content button{
 
 /* prodcutos */
 .model-car{
-    background-color: #253241;
+    background-color: #2b2b2a;
     position: relative;
     color: #fff;
     overflow: hidden;
@@ -490,7 +512,7 @@ section.catalog .catalog-search-content button{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #FFBB0095;
+    background-color: #10101095;
     top: -100%;
     left: 0;
     display: flex;
@@ -609,7 +631,7 @@ section.catalog .catalog-search-content button{
     color: #fff;
     font-weight: bold;
     margin-bottom: 16px;
-    background-color: #BF0007;
+    background-color: #2B2B2A;
     margin-left: -16px;
 }
 
@@ -653,11 +675,11 @@ section.catalog .catalog-search-content button{
   }
   
 .selected {
-    border: 3px solid #BF0007 !important; /* Cambia el color del borde para indicar selección */
+    border: 3px solid #2B2B2A !important; /* Cambia el color del borde para indicar selección */
   }
   
 .information {
-    background-color: #253241;
+    background-color: #2b2b2a;
     padding: 40px;
     display: flex;
     flex-direction: row;
@@ -785,7 +807,7 @@ section.catalog .catalog-search-content button{
 
 
 .page-header-product .content-text{
-    background-color: #253241d7;
+    background-color: #2B2B2Ad7;
     padding: 32px;
     margin-top: 64px;
     /* width: 50%; */
@@ -807,7 +829,7 @@ section.catalog .catalog-search-content button{
 }
 
 .page-header-product .conten-elements .content-text h1{
-    color: #FFBB00;
+    color: #fff;
     font-weight: 700;
     font-size: 64px;
 }
@@ -824,7 +846,7 @@ section.catalog .catalog-search-content button{
 }
 .car-tag{
     width: 100vw;
-    background-color: #253241;
+    background-color: #2b2b2a;
     padding: 32px;
 }
 
@@ -888,7 +910,7 @@ section.catalog .catalog-search-content button{
 .card-slider .card-slider-content h5{
     font-size: 20px;
     text-transform: uppercase;
-    color: #FFBB00;
+    color: #DBDBDB;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -918,7 +940,7 @@ section.contact .maps-contact .maps-div{
 }
 
 section.contact .maps-contact .maps-div::after{
-    background-color: #BF0007;
+    background-color: #2B2B2A;
     content: "";
     position: absolute;
     width: 95%;
@@ -937,7 +959,7 @@ section.contact .contact-form h4{
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #BF0007;
+    color: #2B2B2A;
     text-align: left;
     border-bottom: 2px solid #303C4A;
     text-transform: uppercase;
@@ -969,7 +991,7 @@ section.contact .contact-form textarea{
 section.contact .contact-form button{
     width: 100%;
     height: 48px;
-    background-color: #BF0007;
+    background-color: #2B2B2A;
     border: none;
     border-radius: 0px;
     color: #fff;
@@ -992,7 +1014,7 @@ section.contact .contact-form p{
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #BF0007;
+    color: #2B2B2A;
     text-align: center;
     border-bottom: 2px solid #303C4A;
     text-transform: uppercase;
@@ -1027,7 +1049,7 @@ section.contact .contact-form p{
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #BF0007;
+    color: #2B2B2A;
     text-align: center;
     
     text-transform: uppercase;
@@ -1054,7 +1076,7 @@ section.contact .contact-form p{
 }
 
 .midle-img img{
-    border: solid 12px #BF0007 !important;
+    border: solid 12px #2B2B2A !important;
 }
 .border-horizontal{
     border-left: 3px solid #43434372;
