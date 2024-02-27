@@ -18,18 +18,12 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../../assets/css/templatemo-snapx-photography.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/owl.css">
     <link rel="stylesheet" href="../../assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../../assets/css/icons.css">
-<!--
 
-TemplateMo 576 SnapX Photography
-
-https://templatemo.com/tm-576-snapx-photography
-
--->
   </head>
 
 <body>
@@ -47,7 +41,7 @@ https://templatemo.com/tm-576-snapx-photography
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class="nav-active"><a href="/index.html">Inicio</a></li>
+                          <li class=""><a href="/index.html">Inicio</a></li>
                           
                           <li class="">  <!-- <li class="has-sub"> -->
                             <a href="/about.html" >Nosotros</a>
@@ -88,6 +82,9 @@ https://templatemo.com/tm-576-snapx-photography
             y ofrece una excelente economía de 
             combustible y un sólido rendimiento en 
             carretera.</p>
+            <button class="main-button p-2 mt-5"
+            onclick="window.open('../../assets/pdf/RAM V700.pdf', '_blank');"
+            >Descargar catálogo</button>
         </div>
         <div class="col-lg-6" data-aos="fade-left">
           <img src="img/banner.webp" alt="car-details" class="car-banner">
@@ -145,12 +142,12 @@ https://templatemo.com/tm-576-snapx-photography
         </div>
         
       </div>
+      
     </div>
-
     
   </section>
 
-<section>
+<!-- <section>
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6 card-slider"
@@ -217,16 +214,19 @@ https://templatemo.com/tm-576-snapx-photography
       </div>
     </div>
   </div>
-</section>
-
-
-  
-  
+</section> -->
 
   <section class="catalog" data-aos="zoom-in">
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
+          <h2 class="text-center text-white py-4">
+            Un galeria de tu nuevo auto
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
           <div class="row">
             <div class="carousel-container col-lg-12">
               <div class="carousel">
@@ -291,104 +291,7 @@ https://templatemo.com/tm-576-snapx-photography
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-10 car-tecnical">
-              <h4 > Especificaciones Técnicas </h4>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-lg-6 label">
-                  <p>Marca</p>
-                  <p>Modelo</p>
-                  <p>Transmisión</p>
-                  <p>Motor</p>
-                  <p>Combustible</p>
-                  <p>Color</p>
-                  <p>Tracción</p>
-                  <p>Capacidad de carga</p>
-                  <p>Capacidad de pasajeros</p>
-                  <p>Capacidad de combustible</p>
-                </div>
-                <div class="col-lg-6 info">
-                  <p>Fuso</p>
-                  <p>FM</p>
-                  <p>Manual</p>
-                  <p>4.9L</p>
-                  <p>Diesel</p>
-                  <p>Blanco</p>
-                  <p>4x2</p>
-                  <p>5.5 toneladas</p>
-                  <p>3 pasajeros</p>
-                  <p>100 litros</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-lg-6 label">
-                  <p>Marca</p>
-                  <p>Modelo</p>
-                  <p>Transmisión</p>
-                  <p>Motor</p>
-                  <p>Combustible</p>
-                  <p>Color</p>
-                  <p>Tracción</p>
-                  <p>Capacidad de carga</p>
-                  <p>Capacidad de pasajeros</p>
-                  <p>Capacidad de combustible</p>
-                </div>
-                <div class="col-lg-6 info">
-                  <p>Fuso</p>
-                  <p>FM</p>
-                  <p>Manual</p>
-                  <p>4.9L</p>
-                  <p>Diesel</p>
-                  <p>Blanco</p>
-                  <p>4x2</p>
-                  <p>5.5 toneladas</p>
-                  <p>3 pasajeros</p>
-                  <p>100 litros</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-3">
-          <!-- section search -->
-          <div class="catalog-search-title">
-            <h4>cotizar</h4>
-          </div>
-          <div class="catalog-search-content">
-            <p class="mt-3">Datos personales</p>
-            <input type="text" name="nombre" id="Nombre" placeholder="Nombre">
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-            <input type="text" name="celular" id="Celular" placeholder="Celular">
-            <input type="text" name="email" id="email" placeholder=" Correo Electronico">
-            <input type="text" name="ci" id="ci" placeholder="Cedula de identidad ">
-            <p>formas de pago</p>
-            <select>
-              <option value="contado">Contado</option>
-              <option value="credito">Crédito</option>
-            </select>
-            <input type="text" name="monto" id="monto" placeholder="Monto aproximado disponible">
-
-            <p>notas adicionales</p>
-            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>
-            <p class="Especificaciones">
-              Los datos suministrados en este formulario no seran divulgados seran usados unicamente para que uno de nuestros agentes de ventas, le brinde una atención personalizada y hacer mas rapida
-              la experiencia de compra 
-            </p>
-            <div class="mt-5">
-              <button id="btn-download-catalog" class="secondary-button">
-                
-                Descargar catalogo
-                <i class="fas fa-file-pdf"></i>
-              </button>
-              <button id="btn-search-catalog" class="main-button mt-3">Buscar</button>
-            </div>
-          </div>
-        </div>
-        
       </div>
     </div>
   </section>
