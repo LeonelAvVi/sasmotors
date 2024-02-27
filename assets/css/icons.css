@@ -405,7 +405,7 @@ section.marks img{
 
 /*section catalog*/
 section.catalog{
-    background-color: #f7f7f7;
+    background-color: #101010;
     padding: 92px 52px;
     
 }
@@ -937,6 +937,7 @@ section.contact .maps-contact .maps-div{
     position: relative;
     z-index: 1;
     /* overflow: visible; */
+    height: 120%;
 }
 
 section.contact .maps-contact .maps-div::after{
@@ -944,12 +945,34 @@ section.contact .maps-contact .maps-div::after{
     content: "";
     position: absolute;
     width: 95%;
-    height: 95%;
-    top: 5%;
+    height: 90%;
+    top: 2%;
     left: 5%;
     z-index: -1;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
+
+section.contact .maps-contact .maps-div .maps-contact{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+section.contact .maps-contact .maps-div .maps-contact iframe{
+    width: 70%;
+    height: 100%;
+    border: none;
+}
+
+section.contact .maps-contact .maps-div .maps-contact img{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 section.contact .contact-form{
     padding: 32px;

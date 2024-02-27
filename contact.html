@@ -18,18 +18,12 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-snapx-photography.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/icons.css">
-<!--
 
-TemplateMo 576 SnapX Photography
-
-https://templatemo.com/tm-576-snapx-photography
-
--->
   </head>
 
 <body>
@@ -125,7 +119,15 @@ https://templatemo.com/tm-576-snapx-photography
     <div class="container maps-contact" data-aos="zoom-in">
       <div class="row">
         <div class="col-lg-6 maps-div">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.7964396162924!2d-65.24439890795529!3d-19.037653299999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8d49f3128b1%3A0x793e79d35a5fe3ec!2sEdificio%20Careaga!5e0!3m2!1ses-419!2sbo!4v1697124174127!5m2!1ses-419!2sbo" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="maps-contact">
+            <img src="assets/img/garcilazo.webp" alt="Sas Motors">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.7964396162924!2d-65.24439890795529!3d-19.037653299999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8d49f3128b1%3A0x793e79d35a5fe3ec!2sEdificio%20Careaga!5e0!3m2!1ses-419!2sbo!4v1697124174127!5m2!1ses-419!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
+          <div class="maps-contact">
+            <img src="assets/img/jaime.webp" alt="Sas Motors">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1885.6880856889106!2d-65.24709276048435!3d-19.047191567581457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAyJzUwLjEiUyA2NcKwMTQnNTAuNCJX!5e0!3m2!1ses-419!2sbo!4v1709005932748!5m2!1ses-419!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
         <div class="col-lg-6">
           <div class="contact-form">
@@ -160,7 +162,9 @@ https://templatemo.com/tm-576-snapx-photography
                 </div>
                 <div class="col-lg-12">
                   
-                    <button type="submit" id="form-submit" class="main-button">Enviar</button>
+                    <button type="submit" id="form-submit" class="main-button"
+                      onclick="window.open('https://api.whatsapp.com/send?phone=59162890201&text=Nombre:%20'+document.getElementById('name').value+'%0ACorreo:%20'+document.getElementById('email').value+'%0AAsunto:%20'+document.getElementById('subject').value+'%0AMensaje:%20'+document.getElementById('message').value, '_blank')"
+                    >Enviar</button>
                   
                 </div>
               </div>

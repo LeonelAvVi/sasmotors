@@ -1,7 +1,7 @@
 var dataCars = [
     {
         "name":"Mirage G4",
-        "price": ['4x4/4x2',18490],
+        "price": ['17000',18490],
         "image": "../catalog/mirage-g4/img/banner.webp",
         "anio":"2024",
         "force":"76",
@@ -454,7 +454,7 @@ function cardCatalog(cars){
             
 
             </div>
-            <p class="sales">${cars.transmision}</p>
+            <p class="sales">$ ${cars.price[0]}</p>
         </div>
         </div>
     </div>
