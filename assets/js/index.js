@@ -293,8 +293,63 @@ var dataCars = [
     }
 
 ]
+//eliminar cache de la pagina
+window.onload = function() {
+    //verificar si la url es catalog.html
+    if(window.location.pathname.includes("catalog.html")){
+        if (!window.location.hash) {
+            window
+            .location = window.location + '#loaded';
+            window
+            .location
+            .reload();
+        }
+        document.getElementById("totalSearch").innerHTML = dataCars.length;
+    }
+}
 
-//detectar el evento del boton de buscar
+dataFilter = dataCars;
+if (document.getElementById("selectMarca")) {
+    document.getElementById("selectMarca").selectedIndex = 0;
+    document.getElementById("selectMarca").addEventListener("change", (e)=>{
+        e.preventDefault();
+
+        let marca = document.getElementById("selectMarca").value;
+        //quiero  agrrar datafiilte y solo dejar los que tengan la marca seleccionada
+        dataFilter = dataCars.filter(car => car.marca.toLowerCase() === marca.toLowerCase());
+        loadCatalog(dataFilter);
+        document.getElementById("totalSearch").innerHTML = dataFilter.length;
+    });
+}
+
+if (document.getElementById("preciofilter"))
+document.getElementById("preciofilter").addEventListener("keyup", (e)=>{
+    e.preventDefault();
+    // alert(e.value);
+    
+    let precio = parseInt(document.getElementById("preciofilter").value);
+    
+    if(precio >= 1000){
+        dataFilter = dataCars.filter(car => parseInt( car.price[0]) >= precio);
+        loadCatalog(dataFilter);
+        document.getElementById("totalSearch").innerHTML = dataFilter.length;
+    }else{
+        loadCatalog(dataCars);
+        document.getElementById("totalSearch").innerHTML = dataCars.length;
+    }
+});
+
+if (document.getElementById("modeloInput"))
+    document.getElementById("modeloInput").addEventListener("keyup", (e)=>{
+        e.preventDefault();
+        let modelo = document.getElementById("modeloInput").value;
+        dataFilter = dataCars.filter(car => car.name.toLowerCase().includes(modelo.toLowerCase()));
+        loadCatalog(dataFilter);
+        document.getElementById("totalSearch").innerHTML = dataFilter.length;
+    });
+
+
+if (document.getElementById("modal_trigger"))
 document.getElementById("modal_trigger").addEventListener("click", (e)=>{
     e.preventDefault();
     changePageCars();
@@ -307,80 +362,15 @@ function changePageCars(){
     window.location.href = url;
 }
 
-
-
-// function mostrarInformacion() {
-//     const categorySelect = document.getElementById("category");
-//     const modelSelect = document.getElementById("model");
-//     const priceSelect = document.getElementById("price");
-//     const favColorInput = document.getElementById("favcolor");
-  
-//     const selectedCategory = categorySelect.value;
-//     const selectedModel = modelSelect.value;
-//     const selectedPrice = priceSelect.value;
-  
-//     //quitar los espacios y poner todo en minuscula
-//     const favoriteColor = favColorInput.value.trim().toLowerCase();
-//     console.log(favoriteColor);
-//     const mensaje = `Categoría: ${selectedCategory}\nModelo: ${selectedModel}\nPrecio: ${selectedPrice}\nColor Favorito: ${favoriteColor}`;
-
-//     let content = document.getElementById("items-search");
-//     content.innerHTML = "";
-
-//     dataCars.forEach(element => {
-//         if(element.name == modelSelect.value){
-//             content.innerHTML += showCars(element);
-//         }
-//         let priceMin, priceMax = 0;
-
-//         switch(priceSelect.value){
-//             case "15000":{
-//                 priceMin = 15000;
-//                 priceMax = 20000;
-//                 break;
-//             }
-//             case "20000":{
-//                 priceMin = 20000;
-//                 priceMax = 30000;
-//                 break;
-//             }
-//             case "30000":{
-//                 priceMin = 30000;
-//                 priceMax = 40000;
-//                 break;
-//             }
-//             case "40000":{
-//                 priceMin = 40000;
-//                 priceMax = 50000;
-//                 break;
-//             }
-//             case "50000":{
-//                 priceMin = 50000;
-//                 priceMax = 100000;
-//                 break;
-//             }
-
-//         }
-
-//         element.price.forEach(precio => {
-//             if(precio >= priceMin && precio <= priceMax){
-//                 content.innerHTML += showCars(element);
-//             }
-//         });
-
-//         element.colors.forEach(elementColor=>{
-//             //eliminar espacios y poner a todo en minuscula
-//             let color = elementColor.toLowerCase().replace(/\s/g, "");
-//             if(color.includes(favoriteColor)){
-//                 console.log(elementColor);
-//                 content.innerHTML += showCars(element);
-//             }
-//         })
-
-
-//     });
-
-//   }
+if (document.getElementById("search-index")){
+    document.getElementById("search-index").addEventListener("keyup", (e)=>{
+        e.preventDefault();
+        let search = document.getElementById("search-index").value;
+        dataFilter = dataCars.filter(car => car.name.toLowerCase().includes(search.toLowerCase()));
+        loadCatalog(dataFilter);
+        document.getElementById("totalSearch").innerHTML = dataFilter.length;
+    });
+}
 
 function showCars(cars){
     const namePath= cars.name.toLowerCase().replace(/\s/g, "-");
@@ -398,10 +388,10 @@ function showCars(cars){
     `;
 }
 
-function loadCatalog(){
+function loadCatalog(data = dataCars){
     let content = document.getElementById("catalog-content");
     content.innerHTML = "";
-    dataCars.forEach(element => {
+    data.forEach(element => {
         content.innerHTML += cardCatalog(element);
     });
 }

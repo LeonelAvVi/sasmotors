@@ -135,7 +135,6 @@
                         <option type="checkbox" name="outlander" value="outlander">Outlander</option>
                         <option type="checkbox" name="montero" value="Montero Sport">Montero Sport</option>
                         <option type="checkbox" name="l200" value="L200">L200</option>
-                        
                     </select>
                 </fieldset>
               </div>
@@ -162,7 +161,12 @@
               </div> -->
               <div class="col-lg-2">                        
                 <fieldset>
-                    <button  id="modal_trigger" href="#modal" class="search-button">Buscar</button>
+                    <button  id="modal_trigger" href="#modal" class="search-button"
+                    onclick={
+                      let category = document.getElementById('category').value;
+                      alert (category);
+                    }
+                    >Buscar</button>
                 </fieldset>
               </div>
             </div>
@@ -204,8 +208,8 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-12 index-image"  data-aos="zoom-in-up">
-          <img src="assets/img/index-banner.webp" class="img-banner" alt="">
+        <div class="col-lg-12 index-image mt-5"  data-aos="zoom-in-up">
+          <img src="assets/img/logo.webp" class="img-banner" alt="">
         </div>
       </div>
     </div>
@@ -609,7 +613,7 @@
           <img class="logo" src="assets/img/logo-blanco.webp" alt="Sas Motors">
 <div>
             <a href="https://www.facebook.com/profile.php?id=61550636940761" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/sas_motors_?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/sasmotors.sucre/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="https://api.whatsapp.com/send?phone=%2B59162890201" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:sasmotorssucre@gmail.com"
              target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
@@ -620,23 +624,47 @@
       <div class="row">
         <div class="col-lg-4 footer-section">
           <h4>Información de contacto</h4>
+          <h4 style="color: #DBDBDB;">Mitsubishi - JMC - CHERY - FUSO</h4>
           <ul class="contact-info">
             <li>
               <i class="fa fa-map-marker"></i>
-              <span>Inca Garcilazo esq. Jose Aguirre</span>
+              
+              <span>
+                <a href="https://maps.app.goo.gl/qb81DYR9n787Sqry9">
+                  Inca Garcilazo esq. Jose Aguirre
+                </a>
+              </span>
             </li>
             <li>
               <i class="fa fa-phone"></i>
-              <span>62890201</span>
-            </li>
-            <li>
-              <i class="fa fa-envelope"></i>
-              <span><a href="mailto:" class="mail">
-                SasMotorsSucre@gmail.com</a></span>
+              <span>
+                <a href="https://api.whatsapp.com/send?phone=%2B59162890201" target="_blank">
+                  62890201
+                </a>
+              </span>
             </li>
           </ul>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.7964396162924!2d-65.24439890795529!3d-19.037653299999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8d49f3128b1%3A0x793e79d35a5fe3ec!2sEdificio%20Careaga!5e0!3m2!1ses-419!2sbo!4v1697124174127!5m2!1ses-419!2sbo" width="350" height="200" style="border:0;margin-top: 32px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4 class="mt-3" style="color: #DBDBDB;">FIAT - RAM - JEEP</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span>
+                <a href="https://maps.app.goo.gl/UA1uwgujLfKqXL5y5">
+                  Av. German Mendoza esq. Idelfonzo Murguia
+                </a>
+              </span>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <span>
+                <a href="https://api.whatsapp.com/send?phone=%2B59162890210" target="_blank">
+                  62890210
+                </a>
+              </span>
+            </li>
+          </ul>
+
         </div>
         <div class="col-lg-4 footer-section">
           <h4>Enlaces rápidos </h4>
