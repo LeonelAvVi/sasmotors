@@ -290,7 +290,28 @@ var dataCars = [
         "colors": [
             "Arctic White"
         ]
+    },,
+    {
+        "name": "Fiat Pulse",
+        "price": [34000],
+        "image": "../catalog/FJ.jpg",
+        "anio": "2024",
+        "force": "210",
+        "marca": "Fiat",
+        "url": "../catalog/FusoFJ/index.html",
+        "type": "Truck",
+        "CC": "6.4",
+        "NM": "1120 Nm",
+        "4x2": true,
+        "4x4": true,
+        "MT": "9-speed transmission",
+        "AT": "N/A",
+        "transmision": "4x2 - 4x4",
+        "colors": [
+            "Arctic White"
+        ]
     }
+
 
 ]
 //eliminar cache de la pagina
