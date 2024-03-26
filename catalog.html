@@ -95,26 +95,24 @@
             <h4>Buscar</h4>
           </div>
           <div class="catalog-search-content">
+            <p style="font-weight: bold;">Resultados : <span id="totalSearch">0</span></p>
             <p>marca</p>
-            <select name="marca" id="marca">
-              <!-- options fuso mitsubishi jmc -->
+            <select name="marca" id="selectMarca">
+              <option value="all" selected>Todas</option>
+              <option value="chery">Chery</option>
+              <option value="jeep">Jeep</option>
+              <option value="ram">Ram</option>
+              <option value="fiat">Fiat</option>              
               <option value="fuso">Fuso</option>
               <option value="mitsubishi">Mitsubishi</option>
               <option value="jmc">JMC</option>
             </select>
             <p class="mt-3">modelo</p>
-            <input type="text" name="modelo" id="modelo">
-            <p class="mt-3">rango de precios</p>
-            <div class="range">
-              <div>
-                <p>De :</p>
-                <input name="precio1" id="precio1">
-              </div>
-              <div>
-                <p>A :</p>
-                <input name="precio2" id="precio2">
-              </div>
-            </div>
+            <input type="text" name="modelo" id="modeloInput">
+            <p class="mt-3">Precios</p>
+            <p>Desde :</p>
+            <input name="preciofilter" id="preciofilter">
+
             <p class="mt-3">transmisión</p>
             <select name="transmision" id="transmision">
               <!-- options manual automatica -->
@@ -129,8 +127,8 @@
         <div class="col-lg-9 col-sm-12" data-aos="zoom-out">
           <div class="row">
             <div class="col-lg-12 px-5 input-search">
-              <input type="text" name="search" id="search" placeholder="Buscar">
-              <button id="btn-search" class="main-button">
+              <input type="text" name="search" id="search-index" placeholder="Buscar">
+              <button id="btn-search-index" class="main-button">
                 <i class="fas fa-search"></i>
               </button>
             </div>
@@ -401,7 +399,7 @@
           <img class="logo" src="assets/img/logo-blanco.webp" alt="Sas Motors">
 <div>
             <a href="https://www.facebook.com/profile.php?id=61550636940761" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/sas_motors_?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/sasmotors.sucre/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="https://api.whatsapp.com/send?phone=%2B59162890201" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:sasmotorssucre@gmail.com"
              target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
@@ -412,23 +410,47 @@
       <div class="row">
         <div class="col-lg-4 footer-section">
           <h4>Información de contacto</h4>
+          <h4 style="color: #DBDBDB;">Mitsubishi - JMC - CHERY - FUSO</h4>
           <ul class="contact-info">
             <li>
               <i class="fa fa-map-marker"></i>
-              <span>Inca Garcilazo esq. Jose Aguirre</span>
+              
+              <span>
+                <a href="https://maps.app.goo.gl/qb81DYR9n787Sqry9">
+                  Inca Garcilazo esq. Jose Aguirre
+                </a>
+              </span>
             </li>
             <li>
               <i class="fa fa-phone"></i>
-              <span>62890201</span>
-            </li>
-            <li>
-              <i class="fa fa-envelope"></i>
-              <span><a href="mailto:" class="mail">
-                SasMotorsSucre@gmail.com</a></span>
+              <span>
+                <a href="https://api.whatsapp.com/send?phone=%2B59162890201" target="_blank">
+                  62890201
+                </a>
+              </span>
             </li>
           </ul>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.7964396162924!2d-65.24439890795529!3d-19.037653299999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8d49f3128b1%3A0x793e79d35a5fe3ec!2sEdificio%20Careaga!5e0!3m2!1ses-419!2sbo!4v1697124174127!5m2!1ses-419!2sbo" width="350" height="200" style="border:0;margin-top: 32px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <h4 class="mt-3" style="color: #DBDBDB;">FIAT - RAM - JEEP</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span>
+                <a href="https://maps.app.goo.gl/UA1uwgujLfKqXL5y5">
+                  Av. German Mendoza esq. Idelfonzo Murguia
+                </a>
+              </span>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <span>
+                <a href="https://api.whatsapp.com/send?phone=%2B59162890210" target="_blank">
+                  62890210
+                </a>
+              </span>
+            </li>
+          </ul>
+
         </div>
         <div class="col-lg-4 footer-section">
           <h4>Enlaces rápidos </h4>
